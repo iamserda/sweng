@@ -1,8 +1,28 @@
 def challenge1():
-    pass
+    def divide_numbers(a: int, b: int) -> None:
+        try:
+            print(a / b)
+        except:
+            print("An error occurred!")
+
+        # do not modify below this line
+        divide_numbers(10, 2)
+        divide_numbers(12, 3)
+        divide_numbers(2, 0)
 
 def challenge2():
-    pass
+    def divide_numbers(a: str, b: str) -> None:
+        try:
+            print(int(a) / int(b))
+        except Exception as error:
+            print(f"An error occurred: {error}")
+
+
+
+    # do not modify below this line
+    divide_numbers("10", "2")
+    divide_numbers("12", "0")
+    divide_numbers("2", "not a number")
 
 def challenge3():
     """    
@@ -28,6 +48,12 @@ def challenge3():
     divide_numbers("2", "not a number")
 
 
+# Testing
+print("Challenge 1: ")
 challenge1()
+
+print("\nChallenge 2: ")
 challenge2()
+
+print("\nChallenge 3: ")
 challenge3()
