@@ -1,15 +1,16 @@
 from typing import List, Tuple
 
+
 def challenge1():
-    """ pass"""
+    """pass"""
 
     def sum_3_integers(triplet: List[int]) -> int:
-        """ pass"""
+        """pass"""
         int1, int2, int3 = triplet
         return int1 + int2 + int3
 
     def compute_volume(box_dimensions: Tuple[int, int, int]) -> int:
-        """ pass"""
+        """pass"""
         w, h, d = box_dimensions
         volume = w * h * d
         return volume
@@ -36,8 +37,9 @@ Charlie
 Bob
 David"""
 
+
 def challenge2():
-    """ pass"""
+    """pass"""
     from typing import List, Tuple
 
     def best_student(scores: List[Tuple[str, int]]) -> str:
@@ -56,8 +58,95 @@ def challenge2():
     print(best_student([("Alice", 90), ("Bob", 90), ("Charlie", 80), ("David", 100)]))
 
 
+# """Challenge 3
+# Implement the following functions using enumerate():
+
+# get_index_of_seven(nums:
+# List[int]) -> int that returns the index of the first occurrence of the number 7 in the list nums,
+# or -1 if 7 is not found.
+# get_dist_between_sevens(nums: List[int]) -> int that returns the distance between the first
+# and second occurrence of the number 7 in the list nums.
+# You may assume that there will always be at least two occurrences of the number 7 in the list.
+
+# expected output:
+# 6
+# -1
+# 2
+# 4
+# 1
+# 5 """
+
+
+def challenge3():
+    """challenge 3"""
+
+    def get_index_of_seven(nums: List[int]) -> int:
+        for start in range(len(nums)):
+            if nums[start] == 7:
+                return start
+        return -1
+
+    def get_dist_between_sevens(nums: List[int]) -> int:
+        start = -1
+        end = -1
+        for i in range(len(nums)):
+            if nums[i] == 7:
+                if start == -1:
+                    start = i
+                else:
+                    end = i
+                    break
+        # if start == 0:
+        #     return end - start + 1
+        return end - start
+
+    # do not modify below this line
+    print(get_index_of_seven([1, 2, 3, 4, 5, 6, 7, 8, 9]))
+    print(get_index_of_seven([1, 2, 3, 4, 5, 6, 8, 9]))
+    print(get_index_of_seven([2, 4, 7, 5, 7, 8, 4, 2]))
+
+    print(get_dist_between_sevens([1, 2, 7, 4, 5, 6, 7, 8, 9]))
+    print(get_dist_between_sevens([2, 7, 7, 7, 8]))
+    print(get_dist_between_sevens([7, 4, 8, 4, 2, 7]))
+
+
+# using enumerate:
+def challenge3a():
+    def get_index_of_seven(nums: List[int]) -> int:
+        for index, value in enumerate(nums):
+            if value == 7:
+                return index
+        return -1
+
+    def get_dist_between_sevens(nums: List[int]) -> int:
+        start = -1
+        end = -1
+        for index, value in enumerate(nums):
+            if value == 7:
+                if start == -1:
+                    start = index
+                else:
+                    end = index
+                    break
+        # if start == 0:
+        #     return end - start + 1
+        return end - start
+
+    # do not modify below this line
+    print(get_index_of_seven([1, 2, 3, 4, 5, 6, 7, 8, 9]))
+    print(get_index_of_seven([1, 2, 3, 4, 5, 6, 8, 9]))
+    print(get_index_of_seven([2, 4, 7, 5, 7, 8, 4, 2]))
+
+    print(get_dist_between_sevens([1, 2, 7, 4, 5, 6, 7, 8, 9]))
+    print(get_dist_between_sevens([2, 7, 7, 7, 8]))
+    print(get_dist_between_sevens([7, 4, 8, 4, 2, 7]))
+
+
 # Execute:
 challenge1()
 challenge2()
-# challenge3()
+challenge3()
+challenge3a()
 # challenge4()
+# challenge1()
+# challenge1()
