@@ -180,11 +180,42 @@ def challenge5():
     print(is_arr_valid(["Alice", "Bob", "Charlie"], 1)) # Flase
     print(is_arr_valid(["Alice", "Bob", "Charlie"], 4)) # True
 
+
+def challenge6():
+    def disallow_negatives(num: int) -> int:
+        return 0 if num < 0 else num
+
+
+    def max_difference(nums: List[int]) -> int:
+        max_diff = None
+        
+        for i in range (1, len(nums)):
+            new_diff = nums[i] - nums[i - 1]
+            if max_diff is None:
+                max_diff = new_diff
+            else:
+                max_diff = new_diff if new_diff > max_diff else max_diff
+        return max_diff
+
+
+
+    # do not modify below this line
+    print(disallow_negatives(-2)) # 0
+    print(disallow_negatives(-1)) # 0
+    print(disallow_negatives(0)) # 0
+    print(disallow_negatives(1)) # 1
+    print(disallow_negatives(2)) # 2
+
+    print(max_difference([1, 2, 3, 4, 5, 6, 7, 8, 9])) # 1
+    print(max_difference([1, 2, 3, 4, 5, 6, 8, 9])) # 2
+    print(max_difference([10, 1, 3, 7])) # 4
+    print(max_difference([2, 4, 7, 5, 7, 8, 4, 2])) # 3
+
 # Execute:
 # challenge1()
 # challenge2()
 # challenge3()
 # challenge3a()
 # challenge4()
-challenge5()
-# challenge6()
+# challenge5()
+challenge6()
