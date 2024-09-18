@@ -159,12 +159,32 @@ def challenge4():
     print(group_names_and_scores(["Alice", "Bob", "Charlie"], [90, 80, 70]))
     print(group_names_and_scores(["Jane", "Carol", "Charlie"], [25, 100, 60]))
     print(group_names_and_scores(["Doug", "Bob", "Tommy"], [80, 90, 100]))
+    
+
+#challenge 5:
+def challenge5():
+    """Challenge
+    Implement the following function:
+    is_arr_valid(names: List[str], max_length: int) -> bool. 
+    It should return True if the length of the names list 
+    is greater than 0 and less than or equal to the parameter max_length. 
+    Otherwise it should return False."""
+    
+    def is_arr_valid(names: List[str], max_length: int) -> bool:
+        return 0 < len(names) <= max_length
+
+    # do not modify below this line
+    print(is_arr_valid(["Alice", "Bob", "Charlie"], 3)) # True
+    print(is_arr_valid(["Alice", "Bob", "Charlie"], 2)) # Flase
+    print(is_arr_valid(["Alice", "Bob", "Charlie"], 0)) # Flase
+    print(is_arr_valid(["Alice", "Bob", "Charlie"], 1)) # Flase
+    print(is_arr_valid(["Alice", "Bob", "Charlie"], 4)) # True
 
 # Execute:
 # challenge1()
 # challenge2()
 # challenge3()
 # challenge3a()
-challenge4()
-# challenge1()
-# challenge1()
+# challenge4()
+challenge5()
+# challenge6()
