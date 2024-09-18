@@ -1,5 +1,4 @@
-from typing import List, Tuple
-
+from typing import List, Tuple, Dict
 
 def challenge1():
     """pass"""
@@ -141,12 +140,31 @@ def challenge3a():
     print(get_dist_between_sevens([2, 7, 7, 7, 8]))
     print(get_dist_between_sevens([7, 4, 8, 4, 2, 7]))
 
+def challenge4():
+    
+    """
+    Challenge
+    Implement the following function using zip(): 
+    group_names_and_scores(names: List[str], scores: List[int]) -> Dict[str, int] 
+    that takes two lists, names and scores, and returns a dictionary 
+    where the key is names[i] and it maps to scores[i] as the value.
+    """
+    
+
+    def group_names_and_scores(names: List[str], scores: List[int]) -> Dict[str, int]:
+
+        return { key: value for key, value in zip(names, scores)}
+
+    # do not modify below this line
+    print(group_names_and_scores(["Alice", "Bob", "Charlie"], [90, 80, 70]))
+    print(group_names_and_scores(["Jane", "Carol", "Charlie"], [25, 100, 60]))
+    print(group_names_and_scores(["Doug", "Bob", "Tommy"], [80, 90, 100]))
 
 # Execute:
-challenge1()
-challenge2()
-challenge3()
-challenge3a()
-# challenge4()
+# challenge1()
+# challenge2()
+# challenge3()
+# challenge3a()
+challenge4()
 # challenge1()
 # challenge1()
