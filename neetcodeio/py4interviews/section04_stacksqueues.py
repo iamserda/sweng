@@ -65,3 +65,9 @@ def challenge3():
     print(rotate_list([1, 2, 3, 4, 5], 5))  # deque([1, 2, 3, 4, 5])
 
 
+print("\nChallenge 1:")
+challenge1()
+print("\nChallenge 2:")
+challenge2()
+print("\nChallenge 3:")
+challenge3()
