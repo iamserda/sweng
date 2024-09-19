@@ -23,12 +23,12 @@ def challenge1():
     print(get_values({"X": 205, "Y": 78, "Z": 100}, ["Y"]))
 
     # EXPECTED OUTPUT
-    {'Alice': 90, 'Bob': 80, 'Charlie': 70}
-    {'Jane': 25, 'Carol': 100, 'Charlie': 60}
-    {'Doug': 80, 'Bob': 90, 'Tommy': 100}
-    [90, 80, 70]
-    [25, 100]
-    [78]
+    # {'Alice': 90, 'Bob': 80, 'Charlie': 70}
+    # {'Jane': 25, 'Carol': 100, 'Charlie': 60}
+    # {'Doug': 80, 'Bob': 90, 'Tommy': 100}
+    # [90, 80, 70]
+    # [25, 100]
+    # [78]
 
 
 
