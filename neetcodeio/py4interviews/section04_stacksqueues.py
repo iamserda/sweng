@@ -19,3 +19,30 @@ def challenge1():
     print(reverse_list([3, 2, 1, 4, 6, 2]))
     print(reverse_list([1, 9, 7, 3, 2, 1, 4, 6, 2]))
 
+# Challenge 2:
+def challenge2():
+    """pass"""
+
+    def rotate_list(arr: List[int], k: int) -> Deque[int]:
+        my_queue = deque(arr)
+        for i in range(k):
+            my_queue.append(my_queue.popleft())
+        return my_queue
+
+    # do not modify below this line
+    print(rotate_list([1, 2, 3, 4, 5], 0))
+    print(rotate_list([1, 2, 3, 4, 5], 1))
+    print(rotate_list([1, 2, 3, 4, 5], 2))
+    print(rotate_list([1, 2, 3, 4, 5], 3))
+    print(rotate_list([1, 2, 3, 4, 5], 4))
+    print(rotate_list([1, 2, 3, 4, 5], 5))
+
+    # Expected Output:
+    # deque([1, 2, 3, 4, 5])
+    # deque([2, 3, 4, 5, 1])
+    # deque([3, 4, 5, 1, 2])
+    # deque([4, 5, 1, 2, 3])
+    # deque([5, 1, 2, 3, 4])
+    # deque([1, 2, 3, 4, 5])
+
+
