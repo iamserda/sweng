@@ -51,6 +51,27 @@ def challenge1():
 
 
 # Challenge 2
+def challenge2():
+    def append_elements(arr1: List[int], arr2: List[int]) -> List[int]:
+        for item in arr2:
+            arr1.append(item)
+        return arr1
+
+
+    def remove_elements(arr1: List[int], arr2: List[int]) -> List[int]:
+        for item in arr2:
+            if item in arr1:
+                arr1.remove(item)
+        return arr1
+
+    # do not modify below this line
+    print(append_elements([1, 2, 3], [4, 5, 6]))
+    print(append_elements([4, 3], [4, 5, 3]))
+
+    print(remove_elements([1, 2, 3, 4, 5], [2, 4, 6]))
+    print(remove_elements([1, 2, 3, 4, 5], [2, 3, 4, 5, 5]))
+    print(remove_elements([1, 7, 2, 3, 4, 5], [6, 7, 8, 2]))
+
 
 # Challenge 3
 
@@ -67,7 +88,7 @@ def challenge1():
 
 # TESTING GROUND
 challenge1()
-# challenge2()
+challenge2()
 # challenge3()
 # challenge4()
 # challenge5()
