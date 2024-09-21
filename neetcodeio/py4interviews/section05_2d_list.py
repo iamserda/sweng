@@ -29,7 +29,7 @@ def challenge2():
         try:
             item = grid[r][c]
             return True
-        except IndexError as err:
+        except IndexError:
             return False
 
     # do not modify below this line
