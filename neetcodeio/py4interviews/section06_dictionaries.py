@@ -1,28 +1,39 @@
 """pass """
-from typing import List, Dict, Counter as CounterType
-from collections import defaultdict
 
+from typing import List, Dict, Tuple, Counter as CounterType
+from collections import defaultdict
 
 
 # challenge 1:
 def challenge1():
-    """pass """
+    """pass"""
+
     def build_hash_map(keys: List[str], values: List[int]) -> Dict[str, int]:
-        """pass """
-        return dict( zip(keys, values))
+        """pass"""
+        return dict(zip(keys, values))
 
     def get_values(hash_map: Dict[str, int], keys: List[str]) -> List[int]:
-        """pass """
+        """pass"""
         return [hash_map[key] for key in keys]
-
 
     # do not modify below this line
     print(build_hash_map(["Alice", "Bob", "Charlie"], [90, 80, 70]))
     print(build_hash_map(["Jane", "Carol", "Charlie"], [25, 100, 60]))
     print(build_hash_map(["Doug", "Bob", "Tommy"], [80, 90, 100]))
 
-    print(get_values({"Alice": 90, "Bob": 80, "Charlie": 70}, ["Alice", "Bob", "Charlie"]))
-    print(get_values({"Jane": 25, "Charlie": 60, "Carol": 100, }, ["Jane", "Carol"]))
+    print(
+        get_values({"Alice": 90, "Bob": 80, "Charlie": 70}, ["Alice", "Bob", "Charlie"])
+    )
+    print(
+        get_values(
+            {
+                "Jane": 25,
+                "Charlie": 60,
+                "Carol": 100,
+            },
+            ["Jane", "Carol"],
+        )
+    )
     print(get_values({"X": 205, "Y": 78, "Z": 100}, ["Y"]))
 
     # EXPECTED OUTPUT
@@ -34,10 +45,10 @@ def challenge1():
     # [78]
 
 
-
 # challenge 2:
 def challenge2():
-    """pass """
+    """pass"""
+
     def count_chars(s: str) -> Dict[str, int]:
         my_dictio = {}
         for char in s:
@@ -46,7 +57,6 @@ def challenge2():
             else:
                 my_dictio[char] = 1
         return my_dictio
-
 
     def nested_list_to_dict(nums: List[List[int]]) -> Dict[int, List[int]]:
         results = {}
@@ -73,9 +83,11 @@ def challenge2():
     # {5: [6, 7, 8, 9], 4: [5, 6, 7, 8]}
     # {3: [2, 3, 4, 5], 4: [5, 6, 7, 8], 5: [6, 7, 8]}
 
+
 # challenge2a:
 def challenge2A():
-    """pass """
+    """pass"""
+
     def count_chars(s: str) -> Dict[str, int]:
         dictio = defaultdict(int)
         for char in s:
@@ -107,12 +119,9 @@ def challenge2A():
     # defaultdict(<class 'list'>, {3: [2, 3, 4, 5], 4: [5, 6, 7, 8], 5: [6, 7, 8]})
 
 
-
 # challenge 3:
 def challenge3():
     from collections import Counter
-    
-
 
     def count_chars(s1: str, s2: str) -> CounterType:
         counter = Counter(s1)
@@ -136,11 +145,12 @@ def challenge3():
     print(count_chars("hello", "world"))
     print(count_chars("hello", "worldhello"))
     print(count_chars("areallylongstring", "heyhowisitgoing"))
-    
+
     # do not modify below this line
     print(count_chars_prime("hello", "world"))
     print(count_chars_prime("hello", "worldhello"))
     print(count_chars_prime("areallylongstring", "heyhowisitgoing"))
+
 
 # challenge 4:
 def challenge4():
@@ -148,28 +158,72 @@ def challenge4():
     def num_to_index(nums: List[int]) -> Dict[int, int]:
         return {value: index for index, value in enumerate(nums)}
 
-
     # do not modify below this line
     print(num_to_index([1, 2, 3, 4, 5, 6, 7, 8]))
     print(num_to_index([8, 7, 6, 5, 4, 3, 2, 1]))
     print(num_to_index([0, 3, 2, 4, 5, 1]))
 
+    # Expected Output:
+    # {1: 0, 2: 1, 3: 2, 4: 3, 5: 4, 6: 5, 7: 6, 8: 7}
+    # {8: 0, 7: 1, 6: 2, 5: 3, 4: 4, 3: 5, 2: 6, 1: 7}
+    # {0: 0, 3: 1, 2: 2, 4: 3, 5: 4, 1: 5}
+
 
 # challenge 5:
 def challenge5():
-    pass
+    """pass """
+    def get_dict_items(age_dict: Dict[str, int]) -> List[Tuple[str, int]]:
+        return list(age_dict.items())
+
+    # do not modify below this line
+    print(get_dict_items({"Alice": 25, "Bob": 30, "Charlie": 35}))
+    print(get_dict_items({"Alice": 25, "Bob": 30, "Charlie": 35, "David": 40}))
+    print(
+        get_dict_items({"Bob": 30, "David": 40, "Charlie": 35, "Alice": 25, "Eve": 45})
+    )
+    print(
+        get_dict_items(
+            {"Alice": 25, "Bob": 30, "Charlie": 35, "David": 40, "Eve": 45, "Frank": 50}
+        )
+    )
+
+def challenge5A():
+    """pass """
+    def get_dict_items(age_dict: Dict[str, int]) -> List[Tuple[str, int]]:
+        return [ tup for tup in age_dict.items()]
+        # do not modify below this line
+    print(get_dict_items({"Alice": 25, "Bob": 30, "Charlie": 35}))
+    print(get_dict_items({"Alice": 25, "Bob": 30, "Charlie": 35, "David": 40}))
+    print(
+        get_dict_items({"Bob": 30, "David": 40, "Charlie": 35, "Alice": 25, "Eve": 45})
+    )
+    print(
+        get_dict_items(
+            {"Alice": 25, "Bob": 30, "Charlie": 35, "David": 40, "Eve": 45, "Frank": 50}
+        )
+    )
+
+    # Expected Output:
+    # [('Alice', 25), ('Bob', 30), ('Charlie', 35)]
+    # [('Alice', 25), ('Bob', 30), ('Charlie', 35), ('David', 40)]
+    # [('Bob', 30), ('David', 40), ('Charlie', 35), ('Alice', 25), ('Eve', 45)]
+    # [('Alice', 25), ('Bob', 30), ('Charlie', 35), ('David', 40), ('Eve', 45), ('Frank', 50)]
+
 
 # challenge 6:
 def challenge6():
     pass
 
+
 # challenge 7:
 def challenge7():
     pass
 
+
 # challenge 8:
 def challenge8():
     pass
+
 
 # TESTING GROUNDS:
 print("\nChallenge 1: ")
@@ -184,6 +238,8 @@ print("\nChallenge 4: ")
 challenge4()
 print("\nChallenge 5: ")
 challenge5()
+print("\nChallenge 5A: ")
+challenge5A()
 print("\nChallenge 6: ")
 challenge6()
 print("\nChallenge 7: ")
