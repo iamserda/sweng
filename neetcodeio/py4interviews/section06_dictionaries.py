@@ -1,6 +1,7 @@
 """pass """
-from typing import List, Dict
+from typing import List, Dict, Counter as CounterType
 from collections import defaultdict
+
 
 
 # challenge 1:
@@ -109,7 +110,37 @@ def challenge2A():
 
 # challenge 3:
 def challenge3():
-    pass
+    from collections import Counter
+    
+
+
+    def count_chars(s1: str, s2: str) -> CounterType:
+        counter = Counter(s1)
+        counter.update(s2)
+        return counter
+
+    def helper(my_str, my_dictio):
+        for char in my_str:
+            if char in my_dictio:
+                my_dictio[char] += 1
+            else:
+                my_dictio[char] = 1
+
+    def count_chars_prime(s1: str, s2: str) -> CounterType:
+        dictio = {}
+        helper(s1, dictio)
+        helper(s2, dictio)
+        return dictio
+
+    # do not modify below this line
+    print(count_chars("hello", "world"))
+    print(count_chars("hello", "worldhello"))
+    print(count_chars("areallylongstring", "heyhowisitgoing"))
+    
+    # do not modify below this line
+    print(count_chars_prime("hello", "world"))
+    print(count_chars_prime("hello", "worldhello"))
+    print(count_chars_prime("areallylongstring", "heyhowisitgoing"))
 
 # challenge 4:
 def challenge4():
