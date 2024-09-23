@@ -153,9 +153,15 @@ def challenge6():
 
 
 # TESTING GROUND
+print("\nChallenge 1: ")
 challenge1()
+print("\nChallenge 2: ")
 challenge2()
+print("\nChallenge 3: ")
 challenge3()
+print("\nChallenge 4: ")
 challenge4()
+print("\nChallenge 5: ")
 challenge5()
+print("\nChallenge 6: ")
 challenge6()
