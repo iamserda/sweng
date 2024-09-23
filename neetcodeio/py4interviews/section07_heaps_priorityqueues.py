@@ -147,6 +147,42 @@ def challenge6():
 def challenge7():
     """pass"""
 
+    def get_max_element(arr: List[int]) -> int:
+        return heapq.nlargest(1, arr)[0]
+
+    def get_max_4_elements(arr: List[int]) -> List[int]:
+        # Return elements in *decreasing* order
+        return heapq.nlargest(4, arr)
+
+    def get_max_2_elements(arr: List[int]) -> List[int]:
+        # Return elements in *increasing* order
+        return sorted(heapq.nlargest(2, arr), reverse=False)
+
+    # do not modify below this line
+    print(get_max_element([1, 2, 3]))
+    print(get_max_element([3, 2, 1, 4, 6, 2]))
+    print(get_max_element([1, 9, 7, 3, 2, 1, 4, 6, 2]))
+
+    print(get_max_4_elements([4, 9, 7, 3, 2, 7, 4, 6, 2]))
+    print(get_max_4_elements([4, 9, 7, 2, 1, 3, 2, 3, 4, 6, 2, 3]))
+    print(get_max_4_elements([4, 7, 2, 3, 2, 4, 6, 2]))
+
+    print(get_max_2_elements([4, 5, 3, 7]))
+    print(get_max_2_elements([8, 8, 7, 9]))
+    print(get_max_2_elements([1, 2, 3, 9, 8, 7, 6]))
+
+    # EXPECTED OUTPUT:
+    # 3
+    # 6
+    # 9
+    # [9, 7, 7, 6]
+    # [9, 7, 6, 4]
+    # [7, 6, 4, 4]
+    # [5, 7]
+    # [8, 9]
+    # [8, 9]
+
+
 print("\nChallenge 1: ")
 challenge1()
 print("\nChallenge 2: ")
