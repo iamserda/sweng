@@ -212,10 +212,15 @@ def challenge6():
     print(max_difference([2, 4, 7, 5, 7, 8, 4, 2])) # 3
 
 # Execute:
-# challenge1()
-# challenge2()
-# challenge3()
-# challenge3a()
-# challenge4()
-# challenge5()
+print("\nChallenge 1: ")
+challenge1()
+print("\nChallenge 2: ")
+challenge2()
+print("\nChallenge 3: ")
+challenge3()
+print("\nChallenge 4: ")
+challenge4()
+print("\nChallenge 5: ")
+challenge5()
+print("\nChallenge 6: ")
 challenge6()
