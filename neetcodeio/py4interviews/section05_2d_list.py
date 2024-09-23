@@ -53,9 +53,9 @@ def challenge2():
 
 def challenge3():
     """pass"""
+
     def create_grid(rows: int, cols: int, value: int) -> List[List[int]]:
         return [[value for i in range(cols)] for i in range(rows)]
-
 
     # do not modify below this line
     print(create_grid(2, 3, 0))

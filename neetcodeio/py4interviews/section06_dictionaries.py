@@ -1,6 +1,6 @@
 """pass """
 
-from typing import List, Dict, Tuple,Set, Counter as CounterType
+from typing import List, Dict, Tuple, Set, Counter as CounterType
 from collections import defaultdict
 
 
@@ -171,7 +171,8 @@ def challenge4():
 
 # challenge 5:
 def challenge5():
-    """pass """
+    """pass"""
+
     def get_dict_items(age_dict: Dict[str, int]) -> List[Tuple[str, int]]:
         return list(age_dict.items())
 
@@ -187,11 +188,14 @@ def challenge5():
         )
     )
 
+
 def challenge5A():
-    """pass """
+    """pass"""
+
     def get_dict_items(age_dict: Dict[str, int]) -> List[Tuple[str, int]]:
-        return [ tup for tup in age_dict.items()]
+        return [tup for tup in age_dict.items()]
         # do not modify below this line
+
     print(get_dict_items({"Alice": 25, "Bob": 30, "Charlie": 35}))
     print(get_dict_items({"Alice": 25, "Bob": 30, "Charlie": 35, "David": 40}))
     print(
@@ -212,28 +216,31 @@ def challenge5A():
 
 # challenge 6:
 def challenge6():
-    """pass """
+    """pass"""
+
     def build_hash_set(keys: List[str]) -> Set[str]:
         return set(keys)
-
 
     def check_keys(hash_set: Set[str], keys: List[str]) -> List[bool]:
         return [True if key in hash_set else False for key in keys]
 
-
     # do not modify below this line
 
     output1 = build_hash_set(["Alice", "Bob", "Charlie"])
-    print(type(output1))         # check the type of the output
-    print(sorted(list(output1))) # set order is not guaranteed so we need to sort the list
+    print(type(output1))  # check the type of the output
+    print(
+        sorted(list(output1))
+    )  # set order is not guaranteed so we need to sort the list
 
-    output2 = build_hash_set(["XY", "XX", "YY", "XY", "YX"]) 
-    print(type(output2))         # check the type of the output
-    print(sorted(list(output2))) # set order is not guaranteed so we need to sort the list
+    output2 = build_hash_set(["XY", "XX", "YY", "XY", "YX"])
+    print(type(output2))  # check the type of the output
+    print(
+        sorted(list(output2))
+    )  # set order is not guaranteed so we need to sort the list
 
     print(check_keys({"Alice", "Bob", "Charlie"}, ["Alice", "Bob", "Charlie", "David"]))
-    print(check_keys({'a', 'b', 'c'}, ['a', 'd', 'c']))
-    print(check_keys({'a', 'c'}, ['d', 'c']))
+    print(check_keys({"a", "b", "c"}, ["a", "d", "c"]))
+    print(check_keys({"a", "c"}, ["d", "c"]))
 
     # Expected Output:
     # <class 'set'>
@@ -245,28 +252,25 @@ def challenge6():
     # [False, True]
 
 
-
 # challenge 7:
 def challenge7():
     from typing import List, Set
 
-
     def double_nums(nums: List[int]) -> Set[int]:
         return {num * 2 for num in nums}
-
 
     # do not modify below this line
 
     output1 = double_nums([1, 2, 3])
-    print(type(output1)) 
+    print(type(output1))
     print(sorted(list(output1)))
 
     output2 = double_nums([4, -2, 0, 7])
-    print(type(output2)) 
+    print(type(output2))
     print(sorted(list(output2)))
 
     output3 = double_nums([10, 20, 30, 40, 50])
-    print(type(output3)) 
+    print(type(output3))
     print(sorted(list(output3)))
 
     # Expected Output:
@@ -280,7 +284,8 @@ def challenge7():
 
 # challenge 8:
 def challenge8():
-    """pass """
+    """pass"""
+
     def grid_to_set(grid: List[List[int]]) -> Set[Tuple[int, int]]:
         my_set = set()
         for row_index, row in enumerate(grid):
@@ -306,7 +311,7 @@ def challenge8():
     print(type(output4))
     print(sorted(list(output4)))
 
-    #Expected Ouput:
+    # Expected Ouput:
     # <class 'set'>
     # [(0, 0), (0, 2), (1, 1), (2, 0), (2, 2)]
     # <class 'set'>
@@ -315,6 +320,7 @@ def challenge8():
     # [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2)]
     # <class 'set'>
     # []
+
 
 # TESTING GROUNDS:
 print("\nChallenge 1: ")

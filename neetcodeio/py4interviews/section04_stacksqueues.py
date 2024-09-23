@@ -19,6 +19,7 @@ def challenge1():
     print(reverse_list([3, 2, 1, 4, 6, 2]))
     print(reverse_list([1, 9, 7, 3, 2, 1, 4, 6, 2]))
 
+
 # Challenge 2:
 def challenge2():
     """pass"""

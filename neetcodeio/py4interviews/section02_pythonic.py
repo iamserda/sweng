@@ -1,5 +1,6 @@
 from typing import List, Tuple, Dict
 
+
 def challenge1():
     """pass"""
 
@@ -140,56 +141,54 @@ def challenge3a():
     print(get_dist_between_sevens([2, 7, 7, 7, 8]))
     print(get_dist_between_sevens([7, 4, 8, 4, 2, 7]))
 
+
 def challenge4():
-    
     """
     Challenge
-    Implement the following function using zip(): 
-    group_names_and_scores(names: List[str], scores: List[int]) -> Dict[str, int] 
-    that takes two lists, names and scores, and returns a dictionary 
+    Implement the following function using zip():
+    group_names_and_scores(names: List[str], scores: List[int]) -> Dict[str, int]
+    that takes two lists, names and scores, and returns a dictionary
     where the key is names[i] and it maps to scores[i] as the value.
     """
-    
 
     def group_names_and_scores(names: List[str], scores: List[int]) -> Dict[str, int]:
 
-        return { key: value for key, value in zip(names, scores)}
+        return {key: value for key, value in zip(names, scores)}
 
     # do not modify below this line
     print(group_names_and_scores(["Alice", "Bob", "Charlie"], [90, 80, 70]))
     print(group_names_and_scores(["Jane", "Carol", "Charlie"], [25, 100, 60]))
     print(group_names_and_scores(["Doug", "Bob", "Tommy"], [80, 90, 100]))
-    
 
-#challenge 5:
+
+# challenge 5:
 def challenge5():
     """Challenge
     Implement the following function:
-    is_arr_valid(names: List[str], max_length: int) -> bool. 
-    It should return True if the length of the names list 
-    is greater than 0 and less than or equal to the parameter max_length. 
+    is_arr_valid(names: List[str], max_length: int) -> bool.
+    It should return True if the length of the names list
+    is greater than 0 and less than or equal to the parameter max_length.
     Otherwise it should return False."""
-    
+
     def is_arr_valid(names: List[str], max_length: int) -> bool:
         return 0 < len(names) <= max_length
 
     # do not modify below this line
-    print(is_arr_valid(["Alice", "Bob", "Charlie"], 3)) # True
-    print(is_arr_valid(["Alice", "Bob", "Charlie"], 2)) # Flase
-    print(is_arr_valid(["Alice", "Bob", "Charlie"], 0)) # Flase
-    print(is_arr_valid(["Alice", "Bob", "Charlie"], 1)) # Flase
-    print(is_arr_valid(["Alice", "Bob", "Charlie"], 4)) # True
+    print(is_arr_valid(["Alice", "Bob", "Charlie"], 3))  # True
+    print(is_arr_valid(["Alice", "Bob", "Charlie"], 2))  # Flase
+    print(is_arr_valid(["Alice", "Bob", "Charlie"], 0))  # Flase
+    print(is_arr_valid(["Alice", "Bob", "Charlie"], 1))  # Flase
+    print(is_arr_valid(["Alice", "Bob", "Charlie"], 4))  # True
 
 
 def challenge6():
     def disallow_negatives(num: int) -> int:
         return 0 if num < 0 else num
 
-
     def max_difference(nums: List[int]) -> int:
         max_diff = None
-        
-        for i in range (1, len(nums)):
+
+        for i in range(1, len(nums)):
             new_diff = nums[i] - nums[i - 1]
             if max_diff is None:
                 max_diff = new_diff
@@ -197,19 +196,18 @@ def challenge6():
                 max_diff = new_diff if new_diff > max_diff else max_diff
         return max_diff
 
-
-
     # do not modify below this line
-    print(disallow_negatives(-2)) # 0
-    print(disallow_negatives(-1)) # 0
-    print(disallow_negatives(0)) # 0
-    print(disallow_negatives(1)) # 1
-    print(disallow_negatives(2)) # 2
+    print(disallow_negatives(-2))  # 0
+    print(disallow_negatives(-1))  # 0
+    print(disallow_negatives(0))  # 0
+    print(disallow_negatives(1))  # 1
+    print(disallow_negatives(2))  # 2
 
-    print(max_difference([1, 2, 3, 4, 5, 6, 7, 8, 9])) # 1
-    print(max_difference([1, 2, 3, 4, 5, 6, 8, 9])) # 2
-    print(max_difference([10, 1, 3, 7])) # 4
-    print(max_difference([2, 4, 7, 5, 7, 8, 4, 2])) # 3
+    print(max_difference([1, 2, 3, 4, 5, 6, 7, 8, 9]))  # 1
+    print(max_difference([1, 2, 3, 4, 5, 6, 8, 9]))  # 2
+    print(max_difference([10, 1, 3, 7]))  # 4
+    print(max_difference([2, 4, 7, 5, 7, 8, 4, 2]))  # 3
+
 
 # Execute:
 print("\nChallenge 1: ")

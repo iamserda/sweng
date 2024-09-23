@@ -1,24 +1,30 @@
 """Heaps and Priority Queues"""
+
 import heapq
 from typing import List
 
+
 def challenge1():
     """pass"""
-    def heap_push(heap:List[int], value: int)-> int:
+
+    def heap_push(heap: List[int], value: int) -> int:
         heapq.heappush(heap, value)
         return heap[0]
+
     # do not modify below this line
-    print(heap_push([1, 2, 3], 4)) # 1
-    print(heap_push([1, 2, 3], 0)) # 0
-    print(heap_push([1, 2, 3], 2)) # 1
-    print(heap_push([4, 6, 7, 8, 12, 9, 10], 2)) # 2
-    print(heap_push([4, 6, 7, 8, 12, 9, 10], 5)) # 4
+    print(heap_push([1, 2, 3], 4))  # 1
+    print(heap_push([1, 2, 3], 0))  # 0
+    print(heap_push([1, 2, 3], 2))  # 1
+    print(heap_push([4, 6, 7, 8, 12, 9, 10], 2))  # 2
+    print(heap_push([4, 6, 7, 8, 12, 9, 10], 5))  # 4
 
 
 def challenge2():
     """pass"""
+
     def heap_pop(heap: List[int]):
         return [heapq.heappop(heap) for i in range(len(heap))]
+
     # do not modify below this line
     print(heap_pop([1, 2, 3]))
     print(heap_pop([1, 3, 2]))
@@ -28,12 +34,13 @@ def challenge2():
     # [1, 2, 3]
     # [6, 7, 8, 9, 10, 12]
 
+
 def challenge3():
     """pass"""
+
     def heapify_strings(strings: List[str]) -> List[str]:
         heapq.heapify(strings)
         return strings
-
 
     def heapify_integers(integers: List[int]) -> List[int]:
         heapq.heapify(integers)
@@ -42,7 +49,6 @@ def challenge3():
     def heap_sort(nums: List[int]) -> List[int]:
         heapq.heapify(nums)
         return sorted(nums)
-        
 
     # do not modify below this line
     print(heapify_strings(["b", "a", "e", "c", "d"]))
@@ -56,6 +62,7 @@ def challenge3():
 
 def challenge4():
     """pass"""
+
     def get_reverse_sorted(nums: List[int]) -> List[int]:
         nums_heap = []
         for num in nums:
@@ -64,9 +71,6 @@ def challenge4():
         while nums_heap:
             max_heap.append(-heapq.heappop(nums_heap))
         return max_heap
-
-
-
 
     # do not modify below this line
     print(get_reverse_sorted([1, 2, 3]))
@@ -80,6 +84,7 @@ def challenge4():
 
 def challenge5():
     """pass"""
+
     def get_reverse_sorted(nums: List[int]) -> List[int]:
         max_heap = []
         for num in nums:
@@ -100,13 +105,14 @@ def challenge5():
     # [7, 6, 5, 4, 3, 2, 1]
     # [7, 6, 5, 4, 2, -1, -3, -4]
 
+
 def challenge6():
     """pass"""
-    pass
+
 
 def challenge7():
     """pass"""
-    pass
+
 
 print("\nChallenge 1: ")
 challenge1()

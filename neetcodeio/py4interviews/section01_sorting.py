@@ -1,9 +1,10 @@
 from typing import List
 
+
 def challenge1():
     def sort_words(words: List[str]) -> List[str]:
         words.sort()
-        return words 
+        return words
 
     def sort_numbers(numbers: List[int]) -> List[int]:
         numbers.sort()
@@ -13,11 +14,23 @@ def challenge1():
         numbers.sort()
         return numbers
 
-
-
     # do not modify below this line
-    #expected_output: # ['apple', 'banana', 'blueberry', 'cherry', 'kiwi', 'pear', 'watermelon', 'zucchini']
-    print("\n",sort_words(["cherry", "apple", "blueberry", "banana", "watermelon", "zucchini", "kiwi", "pear"]))
+    # expected_output: # ['apple', 'banana', 'blueberry', 'cherry', 'kiwi', 'pear', 'watermelon', 'zucchini']
+    print(
+        "\n",
+        sort_words(
+            [
+                "cherry",
+                "apple",
+                "blueberry",
+                "banana",
+                "watermelon",
+                "zucchini",
+                "kiwi",
+                "pear",
+            ]
+        ),
+    )
 
     # expected_output: [1, 2, 2, 2, 3, 4, 4, 5, 5, 6, 6, 7, 9, 11, 19]
     print(sort_numbers([1, 5, 3, 2, 4, 11, 19, 9, 2, 5, 6, 7, 4, 2, 6]))
@@ -26,11 +39,10 @@ def challenge1():
     print(sort_decimals([3.14, 2.82, 6.433, 7.9, 21.555, 21.554]))
 
 
-
 def challenge2():
     def reverse_sort_words(words: List[str]) -> List[str]:
         words.sort(reverse=True)
-        return words 
+        return words
 
     def reverse_sort_numbers(numbers: List[int]) -> List[int]:
         numbers.sort(reverse=True)
@@ -40,10 +52,22 @@ def challenge2():
         numbers.sort(reverse=True)
         return numbers
 
-
-
     # do not modify below this line
-    print("\n",reverse_sort_words(["cherry", "apple", "blueberry", "banana", "watermelon", "zucchini", "kiwi", "pear"]))
+    print(
+        "\n",
+        reverse_sort_words(
+            [
+                "cherry",
+                "apple",
+                "blueberry",
+                "banana",
+                "watermelon",
+                "zucchini",
+                "kiwi",
+                "pear",
+            ]
+        ),
+    )
 
     print(reverse_sort_numbers([1, 5, 3, 2, 4, 11, 19, 9, 2, 5, 6, 7, 4, 2, 6]))
 
@@ -51,7 +75,7 @@ def challenge2():
 
 
 def challenge3():
-    #CHALLENGE 3:
+    # CHALLENGE 3:
     """
     Challenge
     Implement the following functions:
@@ -61,18 +85,30 @@ def challenge3():
     Hint: You may define additional functions. Functions defined in the global scope are accessible within other functions.
     """
 
-
     def sort_wordsC(words: List[str]) -> List[str]:
         words.sort(key=lambda a: len(a), reverse=True)
         return words
-
 
     def sort_numbersC(numbers: List[int]) -> List[int]:
         numbers.sort(key=abs)
         return numbers
 
     # do not modify below this line
-    print("\n", sort_wordsC(["cherry", "apple", "blueberry", "banana", "watermelon", "zucchini", "kiwi", "pear"]))
+    print(
+        "\n",
+        sort_wordsC(
+            [
+                "cherry",
+                "apple",
+                "blueberry",
+                "banana",
+                "watermelon",
+                "zucchini",
+                "kiwi",
+                "pear",
+            ]
+        ),
+    )
 
     print(sort_numbersC([1, -5, -3, 2, 4, 11, -19, 9, -2, 5, -6, 7, -4, 2, 6]))
 
@@ -96,21 +132,28 @@ def challenge4():
     def sort_wordsD(words: List[str]) -> List[str]:
         return sorted(words)
 
-
     def sort_numbersD(numbers: List[int]) -> List[int]:
         return sorted(numbers, key=abs, reverse=True)
 
-
     # do not modify below this line
     print()
-    original_words = ["cherry", "apple", "blueberry", "banana", "watermelon", "zucchini", "kiwi", "pear"]
+    original_words = [
+        "cherry",
+        "apple",
+        "blueberry",
+        "banana",
+        "watermelon",
+        "zucchini",
+        "kiwi",
+        "pear",
+    ]
     original_numbers = [1, -5, -3, 2, 4, 11, -19, 9, -2, 5, -6, 7, -4, 2, 6]
 
     print(original_words)
     print(sort_wordsD(original_words))
     print(original_numbers)
     print(sort_numbersD(original_numbers))
-    
+
 
 # TESTING GROUND:
 print("\nChallenge 1: ")

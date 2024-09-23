@@ -52,6 +52,7 @@ def challenge1():
 # Challenge 2
 def challenge2():
     """pass"""
+
     def append_elements(arr1: List[int], arr2: List[int]) -> List[int]:
         for item in arr2:
             arr1.append(item)
@@ -91,6 +92,7 @@ def challenge3():
 # Challenge 4
 def challenge4():
     """pass"""
+
     def create_list_with_value(size: int, index: int, value: int) -> List[int]:
         return [0 if i != index else value for i in range(size)]
 
@@ -104,6 +106,7 @@ def challenge4():
 # Challenge 5
 def challenge5():
     """pass"""
+
     def remove_element(arr: List[int], element: int) -> List[int]:
         return [i for i in arr if i != element]
 
@@ -129,14 +132,12 @@ def challenge5():
     # [1, 3, 5, 7, 9]
 
 
-
 # Challenge 6
 def challenge6():
     """pass"""
 
     def create_list_of_odds(n: int) -> List[int]:
-        return [i for i in range(1, n+1, 2)]
-
+        return [i for i in range(1, n + 1, 2)]
 
     # do not modify below this line
     print(create_list_of_odds(1))
