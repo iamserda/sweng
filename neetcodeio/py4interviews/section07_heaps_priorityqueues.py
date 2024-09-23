@@ -30,7 +30,29 @@ def challenge2():
 
 def challenge3():
     """pass"""
-    pass
+    def heapify_strings(strings: List[str]) -> List[str]:
+        heapq.heapify(strings)
+        return strings
+
+
+    def heapify_integers(integers: List[int]) -> List[int]:
+        heapq.heapify(integers)
+        return integers
+
+    def heap_sort(nums: List[int]) -> List[int]:
+        heapq.heapify(nums)
+        return sorted(nums)
+        
+
+    # do not modify below this line
+    print(heapify_strings(["b", "a", "e", "c", "d"]))
+    print(heapify_integers([3, 4, 5, 1, 2, 6]))
+    print(heap_sort([3, 4, 5, 1, 2, 6]))
+    # EXPECTED OUTPUT:
+    # ['a', 'b', 'e', 'c', 'd']
+    # [1, 2, 5, 4, 3, 6]
+    # [1, 2, 3, 4, 5, 6]
+
 
 def challenge4():
     """pass"""
