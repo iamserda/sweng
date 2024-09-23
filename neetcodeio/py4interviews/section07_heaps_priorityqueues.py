@@ -80,7 +80,25 @@ def challenge4():
 
 def challenge5():
     """pass"""
-    pass
+    def get_reverse_sorted(nums: List[int]) -> List[int]:
+        max_heap = []
+        for num in nums:
+            pair = (-num, num)
+            heapq.heappush(max_heap, pair)
+        max_hp = []
+        while max_heap:
+            pair = heapq.heappop(max_heap)
+            max_hp.append(pair[1])
+        return max_hp
+
+    # do not modify below this line
+    print(get_reverse_sorted([1, 2, 3]))
+    print(get_reverse_sorted([5, 6, 4, 2, 7, 3, 1]))
+    print(get_reverse_sorted([5, 6, -4, 2, 4, 7, -3, -1]))
+    # EXPECTED OUTPUT
+    # [3, 2, 1]
+    # [7, 6, 5, 4, 3, 2, 1]
+    # [7, 6, 5, 4, 2, -1, -3, -4]
 
 def challenge6():
     """pass"""
