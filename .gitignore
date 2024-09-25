@@ -1,3 +1,4 @@
+.DS_Store
 .env
 env*
 /-template/*
@@ -9,6 +10,5 @@ env*
 */SWENG24.code-workspace
 .trunk
 .vscode
-.DS_Store
 *temp.py
 *scratch.py
