@@ -85,18 +85,18 @@ def challenge3():
     Hint: You may define additional functions. Functions defined in the global scope are accessible within other functions.
     """
 
-    def sort_wordsC(words: List[str]) -> List[str]:
-        words.sort(key=lambda a: len(a), reverse=True)
+    def sort_words_c(words: List[str]) -> List[str]:
+        words.sort(key=len, reverse=True)
         return words
 
-    def sort_numbersC(numbers: List[int]) -> List[int]:
+    def sort_numbers_c(numbers: List[int]) -> List[int]:
         numbers.sort(key=abs)
         return numbers
 
     # do not modify below this line
     print(
         "\n",
-        sort_wordsC(
+        sort_words_c(
             [
                 "cherry",
                 "apple",
@@ -110,7 +110,7 @@ def challenge3():
         ),
     )
 
-    print(sort_numbersC([1, -5, -3, 2, 4, 11, -19, 9, -2, 5, -6, 7, -4, 2, 6]))
+    print(sort_numbers_c([1, -5, -3, 2, 4, 11, -19, 9, -2, 5, -6, 7, -4, 2, 6]))
 
 
 # challenge 4
@@ -129,10 +129,12 @@ def challenge4():
 
     """
 
-    def sort_wordsD(words: List[str]) -> List[str]:
+    def sort_words_d(words: List[str]) -> List[str]:
+        """pass"""
         return sorted(words)
 
-    def sort_numbersD(numbers: List[int]) -> List[int]:
+    def sort_numbers_d(numbers: List[int]) -> List[int]:
+        """pass"""
         return sorted(numbers, key=abs, reverse=True)
 
     # do not modify below this line
@@ -150,9 +152,9 @@ def challenge4():
     original_numbers = [1, -5, -3, 2, 4, 11, -19, 9, -2, 5, -6, 7, -4, 2, 6]
 
     print(original_words)
-    print(sort_wordsD(original_words))
+    print(sort_words_d(original_words))
     print(original_numbers)
-    print(sort_numbersD(original_numbers))
+    print(sort_numbers_d(original_numbers))
 
 
 # TESTING GROUND:
