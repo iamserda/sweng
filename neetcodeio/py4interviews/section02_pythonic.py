@@ -27,8 +27,8 @@ def challenge1():
 # """
 # Challenge 2:
 # Implement the following function using unpacking:
-# best_student(scores: List[Tuple[str, int]]) -> str: that takes a list of tuples. 
-# Each tuple represents the (name, score) of a student. 
+# best_student(scores: List[Tuple[str, int]]) -> str: that takes a list of tuples.
+# Each tuple represents the (name, score) of a student.
 # Find the student with the highest score and return their name.
 # You may assume that a score will never be less than 0 and that only one student will have the highest score.
 # expected output:
