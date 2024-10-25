@@ -1,15 +1,14 @@
 *.DS_Store
-.DS_Store
+*/.DS_Store
 .env
 env*
+.vscode
 /-template/*
 /-template
 *__pycache__*
 *tempCodeRunnerFile.py
-*/.DS_Store
 *.vscode
 */SWENG24.code-workspace
 .trunk
-.vscode
 *temp.py
 *scratch.py
