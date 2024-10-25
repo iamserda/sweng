@@ -1,5 +1,9 @@
+# Ignore Mac OS X .DS_Store files
+.DS_Store
+.DS_Store?
+
 *.DS_Store
-*/.DS_Store
+**/.DS_Store
 .env
 env*
 .vscode
