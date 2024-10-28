@@ -14,6 +14,15 @@ class Solution:
                 return True
         return False
 
+    def has_duplicate_using_set(self, nums: list[int]) -> bool:
+        my_set = set()
+        for num in nums:
+            if num in my_set:
+                return True
+            my_set.add(num)
+        return False
+
+
 #Testing Arenas:
 sol = Solution()
 assert sol.hasDuplicateNaive([1,2,3,3]) is True
@@ -21,3 +30,6 @@ assert sol.hasDuplicateNaive([1,2,3,4]) is False
 
 assert sol.has_duplicate_sorting([1,2,3,3]) is True
 assert sol.has_duplicate_sorting([1,2,3,4]) is False
+
+assert sol.has_duplicate_using_set([1,2,3,3]) is True
+assert sol.has_duplicate_using_set([1,2,3,4]) is False
