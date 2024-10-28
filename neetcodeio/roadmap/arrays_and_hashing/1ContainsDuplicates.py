@@ -22,6 +22,8 @@ class Solution:
             my_set.add(num)
         return False
 
+    def has_duplicate_using_set_comparison(self, nums: list[int]) -> bool:
+        return len(nums) > len(set(nums))
 
 #Testing Arenas:
 sol = Solution()
@@ -34,3 +36,8 @@ assert sol.has_duplicate_sorting([1,2,3,4]) is False
 assert sol.has_duplicate_using_set([1,2,3,3]) is True
 assert sol.has_duplicate_using_set([1,2,3,4]) is False
 
+assert sol.has_duplicate_using_set([1,2,3,3]) is True
+assert sol.has_duplicate_using_set([1,2,3,4]) is False
+
+assert sol.has_duplicate_using_set_comparison([1,2,3,3]) is True
+assert sol.has_duplicate_using_set_comparison([1,2,3,4]) is False
