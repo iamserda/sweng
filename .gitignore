@@ -1,18 +1,17 @@
 # Ignore Mac OS X .DS_Store files
 .DS_Store
 .DS_Store?
-
 *.DS_Store
 **/.DS_Store
+**/SWENG24.code-workspace
 .env
 env*
 .vscode
+*.vscode
 /-template/*
 /-template
 *__pycache__*
 *tempCodeRunnerFile.py
-*.vscode
-*/SWENG24.code-workspace
 .trunk
 *temp.py
 *scratch.py
