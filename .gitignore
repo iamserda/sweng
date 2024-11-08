@@ -1,4 +1,3 @@
-# Ignore Mac OS X .DS_Store files
 .DS_Store
 .DS_Store?
 *.DS_Store
@@ -15,3 +14,4 @@ env*
 .trunk
 *temp.py
 *scratch.py
+SWENG24.code-workspace
