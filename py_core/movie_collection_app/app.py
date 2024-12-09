@@ -19,7 +19,9 @@ def add_new_movie(collection:list)->None:
         "release": None
     }
     keys = list(movie.keys())
-    messages = [f"Enter movie {keys[0]}: ", f"Enter movie {keys[1]}: ", f"Enter movie {keys[2]} date: MM-DD-YYYY: "]
+    messages = [f"Enter movie {keys[0]}: ", \
+                f"Enter movie {keys[1]}: ", \
+                f"Enter movie {keys[2]} year[YYYY]: "]
     
     for index, message in enumerate(messages):
         user_input = ""
