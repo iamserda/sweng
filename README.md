@@ -28,7 +28,6 @@
 - [Marlen09](https://leetcode.com/Marlen09/)
 
 ## FUTURE
-
 - Computer Science Theory
 - Software Engineering Practicum
   - Moostly coding challenges my problem solving skills.
@@ -47,10 +46,4 @@
 
 <p style="width: 75%; margin: 1rem auto 1rem;"><marquee ><span style="font-size: 16px;"></span> </marque></p>
 
-[
-    [gh:@iamserda](https://github.com/iamserda),
-    [tw:@iamserda](https://twitter.com/iamserda),
-    [in:@iamserda](https://linkedin.com/in/iamserda)]
-
-Made with 🤍🫶🏿 in N🗽C by
-    [@iamserda](https://www.twitter.com/iamserda)
+Made with 🤍🫶🏿 in N🗽C by [@iamserda](https://www.twitter.com/iamserda) [gh:@iamserda](https://github.com/iamserda) [tw:@iamserda](https://twitter.com/iamserda) [in:@iamserda](https://linkedin.com/in/iamserda)
