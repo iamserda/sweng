@@ -2,19 +2,15 @@
 
 ## Programming Resources(Some Paid, Some Free)
 
-**Base CS and Programming:**
+### Base CS and Programming:
 
-- FREE:[Python for Beginners](https://www.youtube.com/playlist?list=PLlrxD0HtieHhS8VzuMCfQD4uJ9yne1mE6)
-  by Microsoft Developer's YouTube Channel
-- PAID: [Python Fundamentals](https://www.udemy.com/course/python3-fundamentals/)
-  by [Dr. Fred Baptiste](https://www.udemy.com/user/fredbaptiste/) [**PAID**]
-- FREE: [Algorithms](https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O)
-  by Abdul Bari
-- Challenges at [Advent of Code [2023]](https://adventofcode.com/2023)
+- FREE: [Python for Beginners](https://www.youtube.com/playlist?list=PLlrxD0HtieHhS8VzuMCfQD4uJ9yne1mE6) by Microsoft Developer's YouTube Channel
+- PAID: [Python Fundamentals](https://www.udemy.com/course/python3-fundamentals/) by [Dr. Fred Baptiste](https://www.udemy.com/user/fredbaptiste/) [**PAID**]
+- FREE: [Algorithms](https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O) by Abdul Bari
+- Challenges at [Advent of Code](https://adventofcode.com/)
 - Challenges at [LeetCode](https://www.leetcode.com/problemset)
 
-**EXTRA RESOURCES (Some Paid, Some Free):**
-
+### EXTRA RESOURCES (Some Paid, Some Free):
 - [Interesting Code](https://www.keithschwarz.com/interesting/) by Stanford Prof. Keith Schawrz
 - [Advent of Code [2023]](https://adventofcode.com/2023)
 - [Advent of Code [2022]](https://adventofcode.com/2022)
@@ -27,23 +23,24 @@
 - [Advent of Code [2015]](https://adventofcode.com/2015)
 - [Marlen09](https://leetcode.com/Marlen09/)
 
-## FUTURE
+## SEE THE FUTURE:
+In the future, I plan to add more content like:
 - Computer Science Theory
-- Software Engineering Practicum
-  - Moostly coding challenges my problem solving skills.
-  - Build the required skills be both a great IC.
-  - Become a great Staff Engineer on any Product-based SWENG team.
+- Software Engineering Theory and Build Challenges.
 - Algorithms Design and Analysis
-- Data Structures
+- Advanced Data Structures
 - Design Patterns
-- Databases Design and Development
+- System Design Patterns
+- System Design: LLD, HLD, and more...
+- Databases Theory 
+- Database Design and Development
 - Database Management
 - Operating Systems
 - Networking Services
-- DevOps aka Prod Engineering
-- System Design: LLD, HLD, and more...
-- and more...
+- Cloud + DevOps
+- Production Engineering
+and more...
 
-<p style="width: 75%; margin: 1rem auto 1rem;"><marquee ><span style="font-size: 16px;"></span> </marque></p>
+<!-- <p style="width: 75%; margin: 1rem auto 1rem;"><marquee ><span style="font-size: 16px;"></span> </marque></p> -->
 
 Made with 🤍🫶🏿 in N🗽C by [@iamserda](https://www.twitter.com/iamserda) [gh:@iamserda](https://github.com/iamserda) [tw:@iamserda](https://twitter.com/iamserda) [in:@iamserda](https://linkedin.com/in/iamserda)
