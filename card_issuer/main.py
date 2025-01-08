@@ -61,16 +61,16 @@ def issue_card(user_credit):
         return None
 
     if user_credit >= 720:
-        print("Excellent, we can offer you the Deluxe AMEX card. Processing....")
+        print("Excellent, we can offer you the Deluxe AMEX card.\nProcessing....\n")
         return select_card("amex")
 
     if user_credit >= 690:
-        print("Excellent, we can offer you our Premium VISA card. Processing....")
+        print("Excellent, we can offer you our Premium VISA card.\nProcessing....\n")
         return select_card("visa")
 
     if user_credit >= 630:
         print(
-            "Excellent, we can offer you own of our Premium MASTERCard. Processing...."
+            "Excellent, we can offer you own of our Premium MASTERCard.\nProcessing....\n"
         )
         return select_card("master")
 
@@ -139,9 +139,13 @@ def start_app(start=False):
             contact_number = input()
             scapital_clients[username]["phone"] = (
                 contact_number
-                if len(contact_number) == 10
+                if len(contact_number) >= 8
                 else "".join("555-555-5555".split("-"))
             )
+            print(f"{scapital_clients[username]["first"]}, thank you for using S Capital as your preferred financial institution.")
+            print(f"Our team will review your account and get back to you within 30 days.")
+            print(f"We will contact you at {scapital_clients[username]["phone"]}")
+            return
         scapital_clients[username]["card1"] = card_issued
         print("Congratulations!")
         print("Welcome to the Simus Capital card-holders family!")
