@@ -1,5 +1,39 @@
 import random
 
+amex_issued_set = set()
+visa_issued_set = set()
+master_issued_set = set()
+
+
+def issue_card(user_credit):
+    """issue card based on credit"""
+    if user_credit < 300 or user_credit > 850:
+        print("One of our Client Concierge will be with your shorty!")
+        return None
+
+    if user_credit >= 720:
+        print("Excellent, we can offer you the Deluxe AMEX card.\nProcessing....\n")
+        return select_card("amex")
+
+    if user_credit >= 690:
+        print("Great, we can offer you our Premium VISA card.\nProcessing....\n")
+        return select_card("visa")
+
+    if user_credit >= 630:
+        print(
+            "Awesome, we can offer you own of our Premium MASTERCard.\nProcessing....\n"
+        )
+        return select_card("master")
+
+
+def get_servicers():
+    """returns an object of card servicers available at the firm"""
+    return {
+        "amex": {"function": amex_factory, "issued": amex_issued_set},
+        "visa": {"function": visa_factory, "issued": visa_issued_set},
+        "master": {"function": master_factory, "issued": master_issued_set},
+    }
+
 
 def select_card(pmt_servicer: str) -> str:
     """selects card for customer"""
