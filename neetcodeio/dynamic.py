@@ -15,3 +15,9 @@ class DynamicArray:
         if i >= self.capacity:
             raise IndexError("Index is out of range for this task. Cannot set a new value at this index. Consider .pushback() method.")
         self.array[i] = n
+
+    def pushback(self, n: int) -> None:
+        if len(self.array) == self.capacity:
+            self.resize()
+        self.array.append(n)
+
