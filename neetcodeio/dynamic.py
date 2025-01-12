@@ -10,7 +10,7 @@ class DynamicArray:
         if i >= self.capacity:
             raise IndexError("Requested index is out of range.")
         return self.array[i]
-    
+
     def set(self, i: int, n: int) -> None:
         if i >= self.capacity:
             raise IndexError("Index is out of range for this task. Cannot set a new value at this index. Consider .pushback() method.")
@@ -25,3 +25,12 @@ class DynamicArray:
         if len(self.array) == 0:
             raise IndexError("Cannot use menthod 'popback' on an empty Dynamic Array instance.")
         return self.array.pop()
+
+    def resize(self) -> None:
+        self.capacity *= 2
+
+    def getSize(self):
+        return len(self.array)
+
+    def getCapacity(self):
+        return self.capacity
