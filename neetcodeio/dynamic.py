@@ -21,3 +21,7 @@ class DynamicArray:
             self.resize()
         self.array.append(n)
 
+    def popback(self) -> int:
+        if len(self.array) == 0:
+            raise IndexError("Cannot use menthod 'popback' on an empty Dynamic Array instance.")
+        return self.array.pop()
