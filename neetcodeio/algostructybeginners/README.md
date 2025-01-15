@@ -30,11 +30,11 @@ You are preparing for technical interviews.
 
 This course is designed for all learning styles. It includes:
 
-34 video lectures
-34 written articles with code snippets
-63 coding exercises with video solutions
-85 animations
-77 images and diagrams
+- 34 video lectures
+- 34 written articles with code snippets
+- 63 coding exercises with video solutions
+- 85 animations
+- 77 images and diagrams
 
 ### Topics Covered
 
