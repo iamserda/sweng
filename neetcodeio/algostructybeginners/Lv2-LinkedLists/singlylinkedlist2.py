@@ -96,10 +96,5 @@ class LinkedList:
 
 singly = LinkedList()
 singly.insertHead(1)
-singly.insertTail(2)
-singly.insertTail(3)
-assert singly.get(0) == 1
-assert singly.get(1) == 2
-assert singly.get(2) == 3
-assert singly.get(3) == -1
+singly.remove(0)
 print(singly.getValues())
