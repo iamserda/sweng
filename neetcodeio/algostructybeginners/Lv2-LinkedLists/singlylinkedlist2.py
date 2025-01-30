@@ -25,10 +25,23 @@ class LinkedList:
         return -1
 
     def insertHead(self, val: int) -> None:
-        pass
+        new_node = Node(val)
+        new_node.next = self.head
+        self.head = new_node
+        self.length += 1
+        if self.length == 1:
+            self.tail = new_node
 
     def insertTail(self, val: int) -> None:
-        pass
+        new_node = Node(val)
+        if not self.head:
+            self.head = new_node
+            self.tail = new_node
+            self.length = 1
+        elif self.tail:
+            self.tail.next = new_node
+            self.tail = new_node
+            self.length += 1
 
     def remove(self, index: int) -> bool:
         pass
@@ -43,8 +56,11 @@ class LinkedList:
         return values
 
 singly = LinkedList()
-singly.head = Node(1)
-singly.tail = singly.head
-singly.length = 1
-print(singly.get(1))
+singly.insertHead(1)
+singly.insertTail(2)
+singly.insertTail(3)
+assert singly.get(0) == 1
+assert singly.get(1) == 2
+assert singly.get(2) == 3
+assert singly.get(3) == -1
 print(singly.getValues())
