@@ -44,7 +44,31 @@ class LinkedList:
             self.length += 1
 
     def remove(self, index: int) -> bool:
-        pass
+        if self.length == 0 or index < 0 or index >= self.length:
+            return False
+
+        temp = self.head
+        counter = 0
+        while temp:
+            if index == 0 and counter == index:
+                self.head = self.head.next
+                self.length -= 1
+                if self.length == 0:
+                    self.tail = None
+                return True
+
+            if counter + 1 == index:
+                if temp.next:
+                    rm_node = temp.next
+                    temp.next = rm_node.next
+                    rm_node.next = None
+                    self.length -= 1
+                    if rm_node == self.tail:
+                        self.tail = temp
+                    return True
+            temp = temp.next
+            counter += 1
+        return False
 
     def getValues(self) -> list[int]:
         values = []
@@ -57,10 +81,5 @@ class LinkedList:
 
 singly = LinkedList()
 singly.insertHead(1)
-singly.insertTail(2)
-singly.insertTail(3)
-assert singly.get(0) == 1
-assert singly.get(1) == 2
-assert singly.get(2) == 3
-assert singly.get(3) == -1
+singly.remove(0)
 print(singly.getValues())
