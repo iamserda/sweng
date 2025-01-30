@@ -1,5 +1,4 @@
-"""Challenge: Design a Singly-Linked Lists with the following methods: get, insertHead, insertTail, remove and getValues.
-"""
+"""Challenge: Design a Singly-Linked Lists with the following methods: get, insertHead, insertTail, remove and getValues."""
 
 
 class Node:
@@ -31,8 +30,23 @@ class LinkedList:
         self.length += 1
         if self.length == 1:
             self.tail = new_node
+        new_node = Node(val)
+        new_node.next = self.head
+        self.head = new_node
+        self.length += 1
+        if self.length == 1:
+            self.tail = new_node
 
     def insertTail(self, val: int) -> None:
+        new_node = Node(val)
+        if not self.head:
+            self.head = new_node
+            self.tail = new_node
+            self.length = 1
+        elif self.tail:
+            self.tail.next = new_node
+            self.tail = new_node
+            self.length += 1
         new_node = Node(val)
         if not self.head:
             self.head = new_node
@@ -79,7 +93,13 @@ class LinkedList:
                 temp = temp.next
         return values
 
+
 singly = LinkedList()
 singly.insertHead(1)
-singly.remove(0)
+singly.insertTail(2)
+singly.insertTail(3)
+assert singly.get(0) == 1
+assert singly.get(1) == 2
+assert singly.get(2) == 3
+assert singly.get(3) == -1
 print(singly.getValues())
