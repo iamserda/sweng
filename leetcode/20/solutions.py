@@ -1,4 +1,3 @@
-
 def isValid(a_string: str) -> bool:
     """
     Given a string, return True if the parentheses, brackets 
@@ -9,9 +8,9 @@ def isValid(a_string: str) -> bool:
         "]":"[" ,
         "}":"{"
     }
-    
+
     my_stack = []
-    
+
     for item in a_string:
         last_index = len(my_stack) - 1
         if item in closers:
@@ -23,11 +22,13 @@ def isValid(a_string: str) -> bool:
                 return False
         else:
             my_stack.append(item)
-    
+
     return True if len(my_stack) == 0 else  False
+
 
 # TESTING ARENA:
 assert isValid("()[]{}") == True
 assert isValid("{()[]}") == True
 assert isValid("([]{})") == True
+assert isValid("()[{}]") == True
 assert isValid(")[]{}") == False

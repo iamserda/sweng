@@ -12,6 +12,8 @@
 
 ### EXTRA RESOURCES (Some Paid, Some Free):
 - [Interesting Code](https://www.keithschwarz.com/interesting/) by Stanford Prof. Keith Schawrz
+- [Advent of Code [2025]](https://adventofcode.com/2025)
+- [Advent of Code [2024]](https://adventofcode.com/2024)
 - [Advent of Code [2023]](https://adventofcode.com/2023)
 - [Advent of Code [2022]](https://adventofcode.com/2022)
 - [Advent of Code [202]](https://adventofcode.com/2021)
@@ -21,7 +23,9 @@
 - [Advent of Code [2017]](https://adventofcode.com/2017)
 - [Advent of Code [2016]](https://adventofcode.com/2016)
 - [Advent of Code [2015]](https://adventofcode.com/2015)
-- [Marlen09](https://leetcode.com/Marlen09/)
+
+### LEETCODE.COM:
+- [leetcoder: Marlen09](https://leetcode.com/Marlen09/)
 
 ## SEE THE FUTURE:
 In the future, I plan to add more content like:
