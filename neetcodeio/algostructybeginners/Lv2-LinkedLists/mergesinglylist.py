@@ -12,14 +12,8 @@ class ListNode:
 
 
 class Solution:
-    def mergeTwoLists(self, list1: ListNode, list2: ListNode) -> ListNode:
-        if not list1 and not list2:
-            return None
-        if not list1:
-            return list2
-        if not list2:
-            return list1
 
+    def mergeTwoLists(self, list1: ListNode, list2: ListNode) -> ListNode:
         pre = ListNode(-1)
         current = pre
         temp1 = list1
