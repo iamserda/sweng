@@ -14,6 +14,10 @@ class ListNode:
 class Solution:
 
     def mergeTwoLists(self, list1: ListNode, list2: ListNode) -> ListNode:
+        if not list1:
+            return list2
+        if not list2:
+            return list1
         pre = ListNode(-1)
         current = pre
         temp1 = list1
@@ -35,17 +39,22 @@ class Solution:
 
 
 # TESTING ARENA:
+
 s1 = ListNode(100)
 s1.next = ListNode(132)
 s1.next.next = ListNode(753)
-
+s1 = ListNode(11)
+s1.next = ListNode(32)
+s1.next.next = ListNode(53)
 s2 = ListNode(20)
 s2.next = ListNode(141)
 s2.next = ListNode(163)
 
 # Testing:
 sol = Solution()
-singly = sol.mergeTwoLists(s1, s2)
+singly = sol.mergeTwoLists(
+    None,
+)
 answer = []
 while singly:
     answer.append(singly.val)
