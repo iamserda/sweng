@@ -21,6 +21,7 @@ class DoublyLinkedList:
             temp = temp.next
         return -1
 
+<<<<<<< HEAD
     def get_values(self):
         values = []
         temp = self.head
@@ -29,6 +30,8 @@ class DoublyLinkedList:
             temp = temp.next
         return values
 
+=======
+>>>>>>> 39c598a (wip: designing a doubly linked-list with append, prepend, insert_at,, remove, get and getValues(). incomplete -@iamserda)
     def prepend(self, val):
         new_node = Node(val)
         if not self.head:
@@ -70,6 +73,7 @@ class DoublyLinkedList:
 
     def remove(self, index):
         if index >= 0 and index < self.length:
+<<<<<<< HEAD
             temp = self.head
             counter = 0
             while temp:
@@ -77,3 +81,11 @@ class DoublyLinkedList:
                     remove = temp
                     temp = temp.next
                     remove.prev
+=======
+            prev = Node(-1)
+            prev.next = self.head
+            self.head.prev = prev
+            for counter in range(self.length):
+                if counter == index:
+                    removed = prev.next
+>>>>>>> 39c598a (wip: designing a doubly linked-list with append, prepend, insert_at,, remove, get and getValues(). incomplete -@iamserda)
