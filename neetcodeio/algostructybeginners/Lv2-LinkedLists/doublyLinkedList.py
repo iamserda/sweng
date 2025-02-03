@@ -69,20 +69,32 @@ class DoublyLinkedList:
         return False
 
     def remove(self, index):
-        if index >= 0 and index < self.length:
-<<<<<<< HEAD
-            temp = self.head
-            counter = 0
-            while temp:
-                if counter == index:
-                    remove = temp
-                    temp = temp.next
-                    remove.prev
-=======
-            temp = self.head
-            counter = 0
-            while temp:
-                if counter == index:
-                    remove = temp
-                    temp = temp.next
-                    remove.prev
+        if index < 0 or index >= self.length:
+            return IndexError(f"Index: {index} is NOT VALID")
+        # remove head node
+        if index == 0:
+            removed = self.head
+            self.head = self.head.next
+            if self.head:
+                self.head.prev = None
+            removed.next = None
+            if self.tail == removed:
+                self.tail = None
+            self.length -= 1
+            return removed
+        temp = self.head
+        counter = 0
+        while temp and temp.next:
+            if counter + 1 == index:
+                removed = temp.next
+                temp.next = removed.next
+                if temp.next:
+                    temp.next.prev = temp
+                if removed == self.tail:
+                    self.tail = removed.prev
+                removed.prev = None
+                removed.next = None
+                self.length -= 1
+                return removed
+            temp = temp.next
+            counter += 1
