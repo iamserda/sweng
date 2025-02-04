@@ -2,9 +2,9 @@
 title: 1472. Design Browser History
 url: https://leetcode.com/problems/design-browser-history/description/
 owner: leetcode.com
-desicription: solution using a doubly linked list by @iamserda
+desicription: solution using a doubly linked list
+solver: @iamserda
 """
-
 
 class Node:
     def __init__(self, url):
