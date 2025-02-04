@@ -6,6 +6,7 @@ desicription: solution using a doubly linked list
 solver: @iamserda
 """
 
+
 class Node:
     def __init__(self, url):
         self.url = url
