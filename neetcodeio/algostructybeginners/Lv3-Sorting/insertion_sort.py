@@ -1,5 +1,6 @@
 import random
 
+
 class Solution:
 
     def insertionSort(self, arr: list) -> list:
