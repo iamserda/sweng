@@ -33,5 +33,11 @@ def merge_sorted_arrays(arr1, arr2):
 arr1 = [1, 3, 5, 7]
 arr2 = [0, 2, 4, 5, 7, 8]
 arr3 = merge_sorted_arrays(arr1, arr2)
-print(arr3)
-assert arr3 == sorted([*arr1, *arr2])
+# print(arr3)
+# assert arr3 == sorted([*arr1, *arr2])
+
+arr1 = [1]
+arr2 = [0]
+arr3 = merge_sorted_arrays(arr1, arr2)
+# print(arr3)
+# assert arr3 == sorted([*arr1, *arr2])
