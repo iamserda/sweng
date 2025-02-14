@@ -6,7 +6,8 @@ class Pair:
 
 
 class Solution:
-    def insertionSort(self, pairs: List[Pair]) -> List[List[Pair]]:
+
+    def insertionSort(self, pairs: list[Pair]) -> list[list[Pair]]:
         output = []
         for i in range(len(pairs)):
             j = i - 1
