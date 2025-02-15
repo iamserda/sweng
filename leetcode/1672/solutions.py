@@ -1,6 +1,16 @@
 class Solution:
     def maximumWealth(self, accounts: list[list[int]]) -> int:
-        pass
+        maxi = float("-inf")
+        for account in accounts:
+            new_sum = self.accounts_sum(account)
+            maxi = maxi if maxi > new_sum else new_sum
+        return maxi
+
+    def accounts_sum(self, accounts):
+        _sum = 0
+        for account_bal in accounts:
+            _sum += account_bal
+        return _sum
 
 
 sol = Solution()
