@@ -6,6 +6,7 @@ class Solution:
     def insertionSort(self, arr: list) -> list:
         pass
 
+
 sol = Solution()
 
 arr = [10, 1, 20, 2, 30, 3, 4, 40, 5]
