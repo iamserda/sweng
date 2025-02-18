@@ -1,7 +1,17 @@
 class Solution:
 
     def selection_sort(self, arr: list) -> list:
-        pass
+        for i in range(len(arr)):
+            # where to place the next smallest value
+            min_index = i
+
+            for j in range(i, len(arr)):
+                # find the index of the smallest value
+                if arr[j] < arr[min_index]:
+                    min_index = j
+            if min_index != i:
+                # swap the value at i with the value at min_index
+                arr[i], arr[min_index] = arr[min_index], arr[i]
 
 
 sol = Solution()
