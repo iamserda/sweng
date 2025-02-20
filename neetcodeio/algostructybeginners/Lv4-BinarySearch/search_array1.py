@@ -1,4 +1,5 @@
-import math, random
+import math
+
 
 class Solution:
     def binary_search(self, arr, val):
@@ -13,6 +14,7 @@ class Solution:
             else:
                 return mid
         return -1
+
 
 arr = [i for i in range(-100, 100)]
 sol = Solution()
