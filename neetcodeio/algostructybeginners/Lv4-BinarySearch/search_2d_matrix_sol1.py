@@ -14,11 +14,14 @@ class Solution:
         return False
 
     def search_matrix(self, matrix: list[list[int]], target: int) -> bool:
+        """Time: O(m * logn)"""
         if matrix:
-            for arr in matrix:
+            for arr in matrix:  # O(n where n is len(matrix))
                 if target < arr[0] or target > arr[-1]:
                     continue
-                result = self.binary_search(arr, target)
+                result = self.binary_search(
+                    arr, target
+                )  # O(log m, where m is len(arr))
                 if result:
                     return True
         return False
