@@ -4,11 +4,13 @@ class TreeNode:
         self.left: TreeNode = None
         self.right: TreeNode = None
 
+
 class BinarySearchTree:
     def __init__(self):
         self.root = None
         self.height = 0
         self.size = 0
+
     def search(self, value):
         def found(root, value):
             if not root:
@@ -19,6 +21,7 @@ class BinarySearchTree:
                 return found(root.left, value)
             else:
                 return True
+
         return found(self.root, value)
 
     def insert(self, value):
