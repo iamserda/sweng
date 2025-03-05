@@ -1,12 +1,13 @@
 class Node:
     def __init__(self, val: int):
+        pass
 
 
 class MyLinkedList:
 
     def __init__(self):
         """"""
-        
+
     def get(self, index: int) -> int:
         """"""
 
@@ -34,13 +35,14 @@ class MyLinkedList:
         print(arr)
         print(len(arr))
 
-#TESTING ARENA:
+
+# TESTING ARENA:
 
 h = MyLinkedList()
 h.addAtHead(7)
 h.addAtHead(2)
 h.addAtHead(1)
-h.addAtIndex(3,0)
+h.addAtIndex(3, 0)
 h.deleteAtIndex(2)
 h.addAtHead(6)
 h.print_all()
@@ -49,12 +51,12 @@ h.print_all()
 h.get(4)
 h.addAtHead(4)
 h.print_all()
-h.addAtIndex(5,0)
+h.addAtIndex(5, 0)
 h.print_all()
 h.addAtHead(6)
 h.print_all()
 
-#output sequence
+# output sequence
 # [[],
 # [7],
 # [2,7],
