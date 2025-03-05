@@ -24,32 +24,6 @@ class BinarySearchTree:
 
         return found(self.root, value)
 
-    def search(self, value):
-        def found(root, value):
-            if not root:
-                return False
-            elif value > root.value:
-                return found(root.right, value)
-            elif value < root.value:
-                return found(root.left, value)
-            else:
-                return True
-
-        return found(self.root, value)
-
-    def search(self, value):
-        def found(root, value):
-            if not root:
-                return False
-            elif value > root.value:
-                return found(root.right, value)
-            elif value < root.value:
-                return found(root.left, value)
-            else:
-                return True
-
-        return found(self.root, value)
-
     def insert(self, value):
 
         def insrt(root, value):
