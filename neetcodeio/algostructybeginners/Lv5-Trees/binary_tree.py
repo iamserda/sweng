@@ -1,5 +1,6 @@
 from collections import deque
 
+
 class TreeNode:
     def __init__(self, value=None):
         self.value = value
