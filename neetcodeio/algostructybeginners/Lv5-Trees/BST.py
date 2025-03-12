@@ -79,3 +79,12 @@ my_bst.insert(2)
 my_bst.insert(14)
 my_bst.insert(10)
 print(my_bst.search(10))
+
+root = my_bst.root
+my_bst.remove(4)
+if root:
+    print(root.value)
+if root.left:
+    print(root.left.value)
+if root.right:
+    print(root.right.value)
