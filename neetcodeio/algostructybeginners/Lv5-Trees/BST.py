@@ -9,6 +9,17 @@ class BinarySearchTree:
         self.root = None
         self.height = 0
         self.size = 0
+    def search(self, value):
+        def found(root, value):
+            if not root:
+                return False
+            elif value > root.value:
+                return found(root.right, value)
+            elif value < root.value:
+                return found(root.left, value)
+            else:
+                return True
+        return found(self.root, value)
 
     def insert(self, value):
 
@@ -60,12 +71,4 @@ my_bst = BinarySearchTree()
 my_bst.insert(8)
 my_bst.insert(12)
 my_bst.insert(4)
-
-root = my_bst.root
-my_bst.remove(4)
-if root:
-    print(root.value)
-if root.left:
-    print(root.left.value)
-if root.right:
-    print(root.right.value)
+print(my_bst.search(-11))
