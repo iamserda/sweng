@@ -102,3 +102,4 @@ if root.left:
 if root.right:
     print(root.right.value)
 print(my_bst.search(-11))
+print(my_bst.search(10))
