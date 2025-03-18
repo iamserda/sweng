@@ -1,18 +1,6 @@
 from random import randint
 from helpers import *
 
-def get_user_name():
-    user_name = input("Enter your name: ")
-    return user_name
-
-
-
-
-
-
-
-
-
 def start_game():
     name = get_user_name()
     greeting(name)

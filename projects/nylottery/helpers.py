@@ -61,25 +61,24 @@ def announce_lottery(lottery_five, lottery_megaball):
     print()
 
 def get_prize(matched:int,mega_ball=False):
-    def get_prize(matched: int, mega_ball=False):
-        """
-        Determines the prize and message based on the number of matched numbers 
-        and whether the Mega Ball (Power Ball) is matched.
+    """
+    Determines the prize and message based on the number of matched numbers 
+    and whether the Mega Ball (Power Ball) is matched.
 
-        Args:
-            matched (int): The number of matched numbers (0 to 5).
-            mega_ball (bool, optional): Indicates if the Mega Ball is matched. Defaults to False.
+    Args:
+        matched (int): The number of matched numbers (0 to 5).
+        mega_ball (bool, optional): Indicates if the Mega Ball is matched. Defaults to False.
 
-        Returns:
-            tuple: A tuple containing:
-                - message (str): A message describing the result of the lottery draw.
-                - prize (int): The prize amount in dollars. Returns 0 if no prize is won.
+    Returns:
+        tuple: A tuple containing:
+            - message (str): A message describing the result of the lottery draw.
+            - prize (int): The prize amount in dollars. Returns 0 if no prize is won.
 
-        Notes:
-            - Matching 0 to 5 numbers without the Mega Ball results in different prize tiers.
-            - Matching the Mega Ball increases the prize tier or awards a prize even with no matched numbers.
-            - Matching all 5 numbers and the Mega Ball results in the jackpot.
-        """
+    Notes:
+        - Matching 0 to 5 numbers without the Mega Ball results in different prize tiers.
+        - Matching the Mega Ball increases the prize tier or awards a prize even with no matched numbers.
+        - Matching all 5 numbers and the Mega Ball results in the jackpot.
+    """
     prizes = {
         "jackpot": 310000000,
         "second": 1000000,
@@ -128,3 +127,7 @@ def get_prize(matched:int,mega_ball=False):
     if mega_ball:
             message += " And you have matched the Power Ball!"
     return message, prize
+
+def get_user_name():
+    user_name = input("Enter your name: ")
+    return user_name
