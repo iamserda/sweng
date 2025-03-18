@@ -1,8 +1,14 @@
 from random import randint
 
+
 def greeting(user_name=None):
-    greet = "\nHi {}! Welcome to the New York Lottery!".format(user_name) if user_name else "Welcome to the New York Lottery!\n"
+    greet = (
+        "\nHi {}! Welcome to the New York Lottery!".format(user_name)
+        if user_name
+        else "Welcome to the New York Lottery!\n"
+    )
     print(greet)
+
 
 def display_howto():
     message = """\nHere is how to play:
@@ -13,14 +19,18 @@ def display_howto():
 - Winning draw game tickets expire one (1) year from the date of the draw."""
     print(message)
 
+
 def display_prize_info():
     message = """Winning Prizes List: - Jackpot: Match 5 + Powerball: You win the Mega Jackpot.\n- Second: Match 5: You win a cool $1,000,000 USD.\n- Third: Match 4 + Powerball: You win $10,000 USD.\n- Fourth: Match 4: You win the $500.\n- Fifth: Match 3 + Powerball: You win $200.\n- Sixth: Match 3: You win $10.\n- Seventh: Match 2 + Powerball: You win $10.\n- Eighth: Match 1 + Powerball: You win $4.\n- Ninth: Match Powerball ONLY: You win $2."""
 
     print(message)
 
+
 def get_user_selection():
     """Get user's lottery input. Five (5) numbers between 1 and 70, and a sixth number as the mega-ball number (1-25)"""
-    message = "Please enter six (6) numbers for the lottery separated by a comma (,):\n$: "
+    message = (
+        "Please enter six (6) numbers for the lottery separated by a comma (,):\n$: "
+    )
     five_picks = set()
     mega_ball = 0
 
@@ -37,8 +47,10 @@ def get_user_selection():
             continue
     return five_picks, mega_ball
 
+
 def print_user_selection(user_five, user_mega):
     print(f"You have selected:\nFive-Pick: {user_five}\nMega Ball{user_mega}.")
+
 
 def generate_lottery_five():
     """returns a set of five numbers as the winning lottery numbers."""
@@ -47,12 +59,15 @@ def generate_lottery_five():
         five_pick_set.add(randint(1, 70))
     return five_pick_set
 
+
 def generate_mega_ball():
     return randint(1, 25)
+
 
 def verify_picks(lottery, user_picks):
     answer = lottery.intersection(user_picks)
     return answer
+
 
 def announce_lottery(lottery_five, lottery_megaball):
     print("\nGenerating NY Lottery:")
@@ -60,9 +75,10 @@ def announce_lottery(lottery_five, lottery_megaball):
     print("Mega-Ball:", lottery_megaball)
     print()
 
-def get_prize(matched:int,mega_ball=False):
+
+def get_prize(matched: int, mega_ball=False):
     """
-    Determines the prize and message based on the number of matched numbers 
+    Determines the prize and message based on the number of matched numbers
     and whether the Mega Ball (Power Ball) is matched.
 
     Args:
@@ -83,15 +99,15 @@ def get_prize(matched:int,mega_ball=False):
         "jackpot": 310000000,
         "second": 1000000,
         "third": 10000,
-        "fourth":500,
-        "fifth":200,
+        "fourth": 500,
+        "fifth": 200,
         "sixth": 10,
         "seventh": 10,
         "eighth": 4,
-        "ninth": 2
+        "ninth": 2,
     }
     prize = 0
-    match(matched):
+    match (matched):
         case 0:
             message = "You did not win a prize this time, better luck next time! Thank you for playing."
             if mega_ball:
@@ -125,8 +141,9 @@ def get_prize(matched:int,mega_ball=False):
             message = "You did not win a prize this time, better luck next time! Thank you for playing."
 
     if mega_ball:
-            message += " And you have matched the Power Ball!"
+        message += " And you have matched the Power Ball!"
     return message, prize
+
 
 def get_user_name():
     user_name = input("Enter your name: ")
