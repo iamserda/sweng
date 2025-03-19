@@ -67,3 +67,26 @@ class Registrar:
     def delete_registrar(self):
         Registrar.count = 0
         del self
+
+
+# Testing Arena:
+
+try:
+    test_valid = """course_info:
+id: CO2025UR1001SE
+title: PSY101: Introduction to Psychology
+instructor: TBD
+attendance: 0"""
+    registrar1 = Registrar()
+    new_course = registrar1.create_course("PSY101: Introduction to Psychology")
+    assert new_course.__str__() == test_valid
+except Exception as err:
+    print(err)
+    pass
+
+try:
+    registrar2 = Registrar()
+    registrar2.create_course("PSY101: Introduction to Psychology")
+except Exception as err:
+    print("Error:", err)
+    pass
