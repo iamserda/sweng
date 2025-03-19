@@ -9,11 +9,12 @@ class Registrar:
             self.__students = list()
             self.__professors = list()
             Registrar.count += 1
-        raise ValueError("Only 1 Registrar instance can exist!\nPlease use the existing one or delete it and create a new one.")
+        else:
+            raise ValueError("Only 1 Registrar instance can exist!\nPlease use the existing one or delete it and create a new one.")
 
     def create_course(self, name):
         new_course = Course(name)
-        self.available_courses.append(new_course)
+        self.__courses.append(new_course)
         return new_course
     
     def hire_professor(self, first, last, address, dob):
@@ -47,18 +48,9 @@ class Registrar:
 
 
     def list_current_course(self):
-        course_offering = [course.id for course in courses]
+        course_offering = [course.id for course in self.__courses]
         return course_offering
     
-    def delete_registra(self):
+    def delete_registrar(self):
         Registrar.count = 0
         del self
-
-registrar1 = Registrar()
-try:
-    registrar2 = Registrar()
-except Exception as err:
-    print(err)
-    pass
-
-registrar2.create_course("PSY101: Introduction to Psychology")
