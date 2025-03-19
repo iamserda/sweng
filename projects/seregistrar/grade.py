@@ -1,5 +1,6 @@
 """Grade module"""
 
+
 class Grade:
     """creates grade objects, requires course_id(str), student_id(str), and a score(float)."""
 
