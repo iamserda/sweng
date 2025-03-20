@@ -54,16 +54,21 @@ class BinarySearchTree:
                 root.right = rm(root.right, value)
             elif value < root.value:
                 root.left = rm(root.left, value)
+            # if they are equal, which means I found the node to be removed.
             else:
-                # if they are equal, which means I found the node to be removed.
+                # if the node has no left subtree, we return the right
+                # if the node has no right subtree, we return the left
                 if not root.left:
                     return root.right
-                elif not root.right:
+                if not root.right:
                     return root.left
-                else:
-                    min_node = min_value_node(root.right)
-                    root.val = min_node.value
-                    root.right = rm(root.right, min_node.value)
+                # Otherwise:
+                # find the smallest node in the right subtree
+                min_node = min_value_node(root.right)
+                # replace root_val with min_node_val
+                root.val = min_node.value
+                # now remove the min node recursively
+                root.right = rm(root.right, min_node.value)
             return root
 
         self.root = rm(self.root, value)
