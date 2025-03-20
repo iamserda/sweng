@@ -82,3 +82,11 @@ if __name__ == "__main__":
             case _:
                 print("Invalid options, please try again!\n")
                 user_input = "0"
+
+""" 
+TODO:
+- register a student to a course -> register_course(course_id, student_id)
+- assign a professor to a course -> Registrar.assign_instructor(course_id, instructor.id)
+- search for a student -> search(id, type:student, professor, or course)
+- 
+"""
