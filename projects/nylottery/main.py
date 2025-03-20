@@ -1,6 +1,7 @@
 from random import randint
 from helpers import *
 
+
 def start_game():
     name = get_user_name()
     greeting(name)
@@ -16,9 +17,20 @@ def start_game():
     if number_of_matches:
         print(f"You have matched {number_of_matches}")
 
-    print(f"\nYou have matched: {number_of_matches} and Mega-Ball!" if lottery_megaball == usr_mega else f"\nYou've matched: {number_of_matches}")
+    print(
+        f"\nYou have matched: {number_of_matches} and Mega-Ball!"
+        if lottery_megaball == usr_mega
+        else f"\nYou've matched: {number_of_matches}"
+    )
     print(f"Matches: {hits}" if number_of_matches else print("No match"))
-    print(msg, "\nYou have won {}".format(prize) if prize > 0 else "\nThank you for playing! We wish you good luck next time!")
+    print(
+        msg,
+        (
+            "\nYou have won {}".format(prize)
+            if prize > 0
+            else "\nThank you for playing! We wish you good luck next time!"
+        ),
+    )
 
 
 def main():
@@ -33,13 +45,18 @@ $->: """
         try:
             selection = input(message)
             match selection:
-                case "1":start_game()
-                case "2":display_prize_info()
-                case "3":display_howto()
+                case "1":
+                    start_game()
+                case "2":
+                    display_prize_info()
+                case "3":
+                    display_howto()
                 case "x":
                     break
                 case _:
-                    raise ValueError("Invalid input. 1, 2 or x are the only valid options.")
+                    raise ValueError(
+                        "Invalid input. 1, 2 or x are the only valid options."
+                    )
         except TypeError as type_err:
             print(f"TypeError: {type_err}")
             print(f"Ending game...")
@@ -49,5 +66,7 @@ $->: """
             print(f"Ending game...")
             flag = False
     print("Thank you for playing with New York Lottery!")
+
+
 if __name__ == "__main__":
     main()
