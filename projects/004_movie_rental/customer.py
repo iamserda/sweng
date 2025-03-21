@@ -6,7 +6,7 @@ class Customer:
         Customer._id += 1
         self.customer_id = Customer._id
         self.name = name
-        self.rented = []
+        self.rented = set()  # set of Movie.id
 
     def __str__(self):
         return f"id: {self.customer_id} -- name: {self.name}"
