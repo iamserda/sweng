@@ -9,10 +9,3 @@ class Movie:
 
     def __str__(self):
         return f"id: {self.id}, title: {self.title}, director: {self.director}"
-
-
-titanic = Movie("Titanic", "Joe Shmoe")
-lion_king = Movie("The Lion King", "Timon, Pumba")
-
-print(titanic)
-print(lion_king)
