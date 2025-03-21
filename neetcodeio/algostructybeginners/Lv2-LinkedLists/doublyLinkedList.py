@@ -58,7 +58,7 @@ class DoublyLinkedList:
         if index >= 0 and index < self.length:
             temp = self.head
             counter = 0
-            while temp.next:
+            while temp:
                 if counter + 1 == index:
                     new_node.next = temp.next
                     temp.next.prv = new_node
@@ -98,3 +98,41 @@ class DoublyLinkedList:
                 return removed
             temp = temp.next
             counter += 1
+
+
+# TESTING ARENA:
+
+dll = DoublyLinkedList()
+dll.append(0)
+print(dll.get_values())
+dll.append(1)
+print(dll.get_values())
+dll.append(2)
+print(dll.get_values())
+dll.append(3)
+print(dll.get_values())
+dll.append(4)
+print(dll.get_values())
+dll.append(5)
+print(dll.get_values())
+
+
+def test_remove(index):
+    removed_node = dll.remove(index)
+    print(f"removed: {removed_node.val}")
+    print(dll.get_values())
+
+
+for i in range(-1, 7, 1):
+    removed_node = dll.remove(i)
+    if isinstance(removed_node, Node):
+        dll.prepend(f"x{i}")
+        print(f"removed: {removed_node.val}")
+        print(dll.get_values())
+    else:
+        print(removed_node)
+
+temp = dll.head
+while temp:
+    print(temp.val)
+    temp = temp.next
