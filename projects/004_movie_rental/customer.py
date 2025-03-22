@@ -18,11 +18,11 @@ class Customer:
         return self.rented
 
 
-customer0 = Customer("Michael Jordan")
-customer1 = Customer("James Bond")
-customer0.rented.append(1)
-customer0.rented.append(2)
-customer1.rented.append(3)
-
-print(customer0, customer0.get_rented())
-print(customer1, customer1.get_rented())
+if __name__ == "__main__":
+    customer0 = Customer("Michael Jordan")
+    customer1 = Customer("James Bond")
+    customer0.rented.add(1)
+    customer0.rented.add(2)
+    customer1.rented.add(3)
+    print(customer0, customer0.get_rented())
+    print(customer1, customer1.get_rented())
