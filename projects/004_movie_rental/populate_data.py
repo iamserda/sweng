@@ -30,8 +30,8 @@ def test_populate(system):
     for people in famous_people:
         system.add_customer(**people)
 
-    for movie in system.library.values():
-        print(movie)
+    # for movie in system.library.values():
+    #     print(movie)
 
-    for customer in system.customers.values():
-        print(customer)
+    # for customer in system.customers.values():
+    #     print(customer)
