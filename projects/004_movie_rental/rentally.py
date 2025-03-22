@@ -23,12 +23,12 @@ class Rentally:
         if name:
             customer = Customer(name)
             self.customers[customer.customer_id] = customer
-            print(f"Sucess: Created a new customer with id: {customer.customer_id}")
+            # print(f"Sucess: Created a new customer with id: {customer.customer_id}")
 
     def remove_customer(self):
         customer = self.get_customer()
         if isinstance(customer, Customer):
-            self.customers.pop(customer.id)
+            self.customers.pop(customer.customer_id)
             print(f"Sucess: Removed a new customer with id: {customer.customer_id}")
         else:
             print(f"Failure: No customer found with given ID")
@@ -108,7 +108,7 @@ class Rentally:
         customer_id = int(input("Enter Customer ID: "))
         customer = self.customers.get(customer_id)
         if not isinstance(customer, Customer):
-            raise LookupError(f"A Customer with id: {customer_id} was not found!")
+            print(f"A Customer with id: {customer_id} was not found!")
         return customer
 
     def get_movie_id(self) -> int:
