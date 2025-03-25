@@ -41,6 +41,19 @@ class Tree:
                     q.append(elem.right)
         return arr
 
+    def traverse_in_order(self):
+        arr = []
+
+        def inorder(root):
+            if not root:
+                return
+            inorder(root.left)
+            arr.append(root.value)
+            inorder(root.right)
+
+        inorder(self.root)
+        return arr
+
 
 tree = Tree()
 tree.root = TreeNode(5)
@@ -51,5 +64,5 @@ tree.root.right = TreeNode(8)
 tree.root.right.left = TreeNode(6)
 tree.root.right.right = TreeNode(9)
 
-arr = tree.bfs_to_list()
-print(arr)
+print("BFS-Traversal:", tree.bfs_to_list())
+print("DFS-Traversal:", tree.traverse_in_order())
