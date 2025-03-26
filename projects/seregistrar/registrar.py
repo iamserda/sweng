@@ -23,7 +23,7 @@ class Registrar:
     def hire_professor(self, first, last, address, dob):
         new_professor = Professor(first, last, address, dob)
         new_professor.salary = 200000
-        self.__professors[new_professor.__id] = new_professor
+        self.__professors[new_professor.id] = new_professor
         return new_professor
 
     def register_student(self, first, last, address, dob):
@@ -61,7 +61,13 @@ class Registrar:
         course.instructor = professor
         professor.courses.append(course.id)
 
-    def list_current_course(self):
+    def list_current_professors(self):
+        return self.__professors.values()
+
+    def list_current_students(self):
+        return self.__students.values()
+
+    def list_current_courses(self):
         return self.__courses.values()
 
     def delete_registrar(self):
@@ -70,23 +76,23 @@ class Registrar:
 
 
 # Testing Arena:
+if __name__ == "__main__":
+    try:
+        test_valid = """course_info:
+    id: CO2025UR1001SE
+    title: PSY101: Introduction to Psychology
+    instructor: TBD
+    attendance: 0"""
+        registrar1 = Registrar()
+        new_course = registrar1.create_course("PSY101: Introduction to Psychology")
+        assert new_course.__str__() == test_valid
+    except Exception as err:
+        print(err)
+        pass
 
-try:
-    test_valid = """course_info:
-id: CO2025UR1001SE
-title: PSY101: Introduction to Psychology
-instructor: TBD
-attendance: 0"""
-    registrar1 = Registrar()
-    new_course = registrar1.create_course("PSY101: Introduction to Psychology")
-    assert new_course.__str__() == test_valid
-except Exception as err:
-    print(err)
-    pass
-
-try:
-    registrar2 = Registrar()
-    registrar2.create_course("PSY101: Introduction to Psychology")
-except Exception as err:
-    print("Error:", err)
-    pass
+    try:
+        registrar2 = Registrar()
+        registrar2.create_course("PSY101: Introduction to Psychology")
+    except Exception as err:
+        print("Error:", err)
+        pass
