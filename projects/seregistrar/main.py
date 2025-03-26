@@ -18,7 +18,7 @@ def get_person_info():
 def create_new_student():
     student_info = get_person_info()
     if student_info:
-        new_student = app_admin.hire_professor(**student_info)
+        new_student = app_admin.register_student(**student_info)
         print("Success: A new student was created.")
         return new_student
     return ValueError("Could not create new student with the info given.")
@@ -51,13 +51,31 @@ def create_new_course():
 
 
 def display_options():
-    message = """Options:\n1- Create new course\n2- Add a new student\n3- Add a new Professor\n4- Show all courses\n9- Display this menu\nx- Exit app.\n\n"""
+    message = """Options:
+    1- Create new course
+    2- Add a new student
+    3- Add a new Professor
+    4- Show all courses
+    5- Show all students
+    6- Show all professors
+    9- Display this menu
+    x- Exit app.\n\n"""
     print(message)
 
 
 def get_all_courses():
-    for course in app_admin.list_current_course():
-        print(f"course:\ncourse\n")
+    for course in app_admin.list_current_courses():
+        print(f"course: {course}\n")
+
+
+def get_all_students():
+    for student in app_admin.list_current_students():
+        print(f"Student: {student}\n")
+
+
+def get_all_professors():
+    for prof in app_admin.list_current_professors():
+        print(f"Professor: {prof}\n")
 
 
 if __name__ == "__main__":
@@ -75,6 +93,12 @@ if __name__ == "__main__":
                 hire_new_professor()
             case "4":
                 get_all_courses()
+            case "5":
+                get_all_courses()
+            case "6":
+                get_all_students()
+            case "7":
+                get_all_professors()
             case "9":
                 display_options()
             case "x":
