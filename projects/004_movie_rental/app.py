@@ -5,7 +5,7 @@ from populate_data import test_populate
 
 
 def show_menu():
-    message = "\nWelcome to Rentally:\n1. Rent a Movie\n2. Return a Movie\n3. Add a Movie\n4. Delete a Movie\n5. Add a Customer\n6. Delete a Customer\nm. Show Menu\nx. Exit\n"
+    message = "\n1. Rent a Movie\n2. Return a Movie\n3. Add a Movie\n4. Delete a Movie\n5. Add a Customer\n6. Delete a Customer\nm. Show Menu\nx. Exit\n"
     print(message)
 
 
@@ -41,6 +41,7 @@ def start_game():
 
 
 if __name__ == "__main__":
+    print("\nWelcome to Rentally:\n")
     system = Rentally()
     test_populate(system)
     start_game()
