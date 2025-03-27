@@ -9,7 +9,7 @@ def show_menu():
     print(message)
 
 
-def start_game():
+def start():
     show_menu()
     flag = True
     while flag:
@@ -43,5 +43,4 @@ def start_game():
 if __name__ == "__main__":
     print("\nWelcome to Rentally:\n")
     system = Rentally()
-    test_populate(system)
-    start_game()
+    start()
