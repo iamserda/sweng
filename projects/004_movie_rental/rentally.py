@@ -1,3 +1,5 @@
+import os
+import csv
 from customer import Customer
 from movie import Movie
 
@@ -20,10 +22,22 @@ class Rentally:
 
     # CUSTOMER METHODS
     def add_customer(self, name: str):
-        if name:
+        try:
+            if not self.customers.keys():
+                self.create_db("customer_db.csv")
+            if not name:
+                raise ValueError(
+                    f"value: {name} is NOT a valid. Must be alphabetic string."
+                )
+
             customer = Customer(name)
             self.customers[customer.customer_id] = customer
-            # print(f"Sucess: Created a new customer with id: {customer.customer_id}")
+            customer.save_to_db()
+            return customer
+
+        except Exception as err:
+            print(f"Error: {err}")
+            pass  # TODO: handle specific Exceptions types etc...
 
     def add_movie(self, title, director=None):
         new_movie = Movie(title, director)
@@ -117,3 +131,17 @@ class Rentally:
         for movie in self.library.values():
             if movie_title == movie.title:
                 return movie
+
+    def show_customer(self):
+        print(self.customers.key())
+
+    def create_db(self, csv_file_name):
+        abs_path = os.path.abspath("./")
+        file_path = os.path.join(
+            abs_path, f"projects/004_movie_rental/data/{csv_file_name}"
+        )
+        if os.path.exists(file_path):
+            with open(file_path, "w", newline="") as cust_db:
+                header = ["id", "name", "rented"]
+                writer = csv.DictWriter(cust_db, fieldnames=header)
+                writer.writeheader()
