@@ -21,7 +21,7 @@ class Rentally:
             )
 
     # CUSTOMER METHODS
-    def add_customer(self, name: str):
+    def add_customer(self, name: str) -> Customer:
         try:
             if not self.customers.keys():
                 self.create_db("customer_db.csv")
@@ -35,21 +35,14 @@ class Rentally:
             customer.save_to_db()
             return customer
 
+        except ValueError as err:
+            # TODO: IMPROVE THIS -> handle specific Exceptions: ValueError,
+            print(f"ValueError: {err}")
         except Exception as err:
-            print(f"Error: {err}")
-            pass  # TODO: handle specific Exceptions types etc...
+            # TODO: LOG ME
+            print(f": {err}")
 
-    def add_movie(self, title, director=None):
-        new_movie = Movie(title, director)
-        if new_movie.id in self.library:
-            raise ValueError(
-                "ID-ERROR: This ID already exist in this library. Check ID and try again."
-            )
-        self.library[new_movie.id] = new_movie
-        self.available_movies.add(new_movie.id)
-        return new_movie.id
-
-    def get_customer(self):
+    def get_customer(self) -> Customer:
         customer_id = int(input("Enter Customer ID: "))
         customer = self.customers.get(customer_id)
         if not isinstance(customer, Customer):
@@ -70,7 +63,38 @@ class Rentally:
         else:
             print(f"Failure: No customer found with given ID")
 
-    # MOVIE METHODS
+    # MOVIE HANDLERS: Handles actions related to movies like add/remove/delete etc...
+    def add_movie(self, title, director=None) -> Movie:
+        try:
+            path_abs = os.path.abspath("./")
+            data_path = "projects/004_movie_rental/data/"
+            file_path = os.path.join(path_abs, data_path, "movie_db.csv")
+            # Create a new Library File if there is no library, as-in this is NEW:
+            if not os.path.isfile(file_path):
+                with open(file_path, "w") as movie_db:
+                    header = ["id", "title", "director"]
+                    csv_writer = csv.DictWriter(movie_db, fieldnames=header)
+                    csv_writer.writeheader()
+
+            new_movie = Movie(title, director)
+            # TODO: Review this -> Since ID are automatically-generated,
+            # it is unlikely that a new id would already be in the system.
+            # If that happens, it should be avoided elsewhere,
+            # instead of just checking here.
+            if new_movie.id in self.library:
+                raise ValueError(
+                    "ID-ERROR: This ID already exist in this library. Check ID and try again."
+                )
+            self.library[new_movie.id] = new_movie
+            self.available_movies.add(new_movie.id)
+            new_movie.save_to_db()
+            return new_movie
+        except FileNotFoundError as err:
+            print(err)
+        except ValueError as err:
+            print(err)
+        except Exception as err:
+            print(f"Exception: {err}")
 
     def remove_movie(self, movie_id):
         if movie_id in self.rented_movies:
