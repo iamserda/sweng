@@ -46,6 +46,8 @@ def start(system: Rentally):
                 system.remove_customer()
             case "m":
                 show_menu()
+            case "p":
+                test_populate(system)
             case "x":
                 flag = False
             case _:
