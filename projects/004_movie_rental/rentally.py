@@ -67,8 +67,7 @@ class Rentally:
     def add_movie(self, title, director=None) -> Movie:
         try:
             path_abs = os.path.abspath("./")
-            data_path = "projects/004_movie_rental/data/"
-            file_path = os.path.join(path_abs, data_path, "movie_db.csv")
+            file_path = os.path.join(path_abs, "data/movie_db.csv")
             # Create a new Library File if there is no library, as-in this is NEW:
             if not os.path.isfile(file_path):
                 with open(file_path, "w") as movie_db:
