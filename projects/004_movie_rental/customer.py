@@ -24,17 +24,15 @@ class Customer:
         return self.rented
 
     def save_to_db(self):
-        abs_path = os.path.abspath("./")
-        file_path = os.path.join(
-            abs_path, "projects/004_movie_rental/data/customer_db.csv"
-        )
         try:
+            abs_path = os.path.abspath("./")
+            file_path = os.path.join(abs_path, "data/customer_db.csv")
             with open(file_path, "a+", newline="") as cust_db:
                 header = ["id", "name", "rented"]
-                writer = csv.DictWriter(cust_db, fieldnames=header)
-                writer.writerow(self.as_dict())
+                csv_scribe = csv.DictWriter(cust_db, fieldnames=header)
+                csv_scribe.writerow(self.as_dict())
         except Exception as err:
-            print("In Save DB")
+            # TODO: Handle specific expection instead of generics.
             print(err)
 
 if __name__ == "__main__":
