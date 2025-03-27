@@ -158,13 +158,10 @@ class Rentally:
     def show_customer(self):
         print(self.customers.key())
 
-    def create_db(self, csv_file_name):
-        abs_path = os.path.abspath("./")
-        file_path = os.path.join(
-            abs_path, f"projects/004_movie_rental/data/{csv_file_name}"
-        )
-        if os.path.exists(file_path):
-            with open(file_path, "w", newline="") as cust_db:
-                header = ["id", "name", "rented"]
-                writer = csv.DictWriter(cust_db, fieldnames=header)
-                writer.writeheader()
+    def create_db(self, csv_file_name: str):
+        data_path = os.path.realpath("./data/")
+        file_path = os.path.join(data_path, csv_file_name)
+        with open(file_path, "w", newline="") as cust_db:
+            header = ["id", "name", "rented"]
+            writer = csv.DictWriter(cust_db, fieldnames=header)
+            writer.writeheader()
