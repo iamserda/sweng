@@ -1,4 +1,8 @@
-def test_populate(system):
+from rentally import Rentally
+
+
+def initial_db_seeding(system: Rentally):
+    """Takes a Rentally-object, uses it to add new movies and customers to the app."""
     movies = [
         {"title": "Inception", "director": "Christopher Nolan"},
         {"title": "Pulp Fiction", "director": "Quentin Tarantino"},
@@ -30,8 +34,7 @@ def test_populate(system):
     for people in famous_people:
         system.add_customer(**people)
 
-    # for movie in system.library.values():
-    #     print(movie)
 
-    # for customer in system.customers.values():
-    #     print(customer)
+if __name__ == "__main__":
+    system = Rentally()
+    initial_db_seeding(system)
