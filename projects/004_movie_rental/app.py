@@ -20,15 +20,15 @@ def start_game():
             case "2":
                 system.return_a_movie()
             case "3":
-                movie_title = input("Enter movie title:")
+                movie_title = input("Enter movie title: ")
                 movie_director = input("Enter movie director's name: ")
                 system.add_movie(title=movie_title, director=movie_director)
             case "4":
-                print("Selected 'Delete a Movie'")
+                print("WARNING: Selected 'Delete a Movie'")
                 movie_id = int(input("Enter movie ID: "))
                 system.remove_movie(movie_id)
             case "5":
-                customer_name = input("Enter Customer's ID:")
+                customer_name = input("Enter Customer's name: ")
                 system.add_customer(name=customer_name)
             case "6":
                 system.remove_customer()
