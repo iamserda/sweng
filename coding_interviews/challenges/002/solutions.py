@@ -25,12 +25,9 @@ def most_frequent(given_list):
             dictio[item] += 1
         else:
             dictio[item] = 1
-    for num, count in dictio.items():
-        if count >= max_count:
-            max_item, max_count = num, count
-
+        if dictio[item] >= max_count:
+            max_item, max_count = item, dictio[item]
     return max_item
-
 
 # NOTE: The following input values will be used for testing your solution.
 # most_frequent(list1) should return 1
