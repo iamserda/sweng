@@ -1,7 +1,7 @@
 from rentally import Rentally
 from movie import Movie
 from customer import Customer
-from populate_data import test_populate
+from populate_data import *
 
 
 def show_menu():
@@ -47,7 +47,7 @@ def start(system: Rentally):
             case "m":
                 show_menu()
             case "p":
-                test_populate(system)
+                initial_db_seeding(system)
             case "x":
                 flag = False
             case _:
