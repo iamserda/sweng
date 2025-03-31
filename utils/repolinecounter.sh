@@ -1,0 +1,1 @@
+find . -type d \( -name "node_modules" -o -name "env" \) -prune -o -type f \( -name "*.py" -o -name "*.js" \) -print0 | xargs -0 wc -l
