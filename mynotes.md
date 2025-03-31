@@ -1,7 +1,8 @@
 # Bits2Bytes: My Software Engineering Notes
 
 ### A reference to capture assertio errors and lines where they occurred.
-````python3
+
+````python
 """How to show the line for assertions raised during a function call."""
 import sys
 import traceback
@@ -21,4 +22,8 @@ def my_function():
         exit(1)```
 ````
 
-### [Count lines in your Git Repo](https://gist.github.com/mandiwise/dc53cb9da00856d7cdbb)
+### [How to count relevant lines of code in your Git Repo](https://gist.github.com/mandiwise/dc53cb9da00856d7cdbb)
+
+```bash
+find . -type d \( -name "node_modules" -o -name "env" \) -prune -o -type f \( -name "*.py" -o -name "*.js" \) -print0 | xargs -0 wc -l
+```
