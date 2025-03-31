@@ -20,3 +20,5 @@ def my_function():
         print(f'An error occurred on line {line} in statement {text}')
         exit(1)```
 ````
+
+### [Count lines in your Git Repo](https://gist.github.com/mandiwise/dc53cb9da00856d7cdbb)
