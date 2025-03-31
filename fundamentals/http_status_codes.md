@@ -3,6 +3,7 @@
 This file contains a dictionary that maps HTTP status codes to their corresponding descriptions. The status codes range from 100 to 511, with each code representing a specific response from a server to a client's request.
 
 The dictionary is structured as follows:
+```python
 {
     '100': 'Continue',
     '101': 'Switching Protocols',
@@ -67,7 +68,7 @@ The dictionary is structured as follows:
     '509': 'Bandwidth Limit Exceeded',
     '510': 'Not Extended',
     '511': 'Network Authentication Required'
-}
+}```
 
 The file also includes a minified version of the dictionary for compact storage and transmission purposes.
 
