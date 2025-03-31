@@ -64,9 +64,11 @@ def start_app(start=False):
                 if len(contact_number) >= 8
                 else "".join("555-555-5555".split("-"))
             )
-            print(f"{scapital_clients[username]["first"]}, thank you for using S Capital as your preferred financial institution.")
+            print(
+                f"{scapital_clients[username]['first']}, thank you for using S Capital as your preferred financial institution."
+            )
             print(f"Our team will review your account and get back to you within 30 days.")
-            print(f"We will contact you at {scapital_clients[username]["phone"]}")
+            print(f"We will contact you at {scapital_clients[username]['phone']}")
             return
         scapital_clients[username]["card1"] = card_issued
         print("Congratulations!")
