@@ -12,6 +12,9 @@
 
 ### EXTRA RESOURCES (Some Paid, Some Free):
 - [Interesting Code](https://www.keithschwarz.com/interesting/) by Stanford Prof. Keith Schawrz
+- [Advent of Code [2028]](https://adventofcode.com/2028)
+- [Advent of Code [2027]](https://adventofcode.com/2027)
+- [Advent of Code [2026]](https://adventofcode.com/2026)
 - [Advent of Code [2025]](https://adventofcode.com/2025)
 - [Advent of Code [2024]](https://adventofcode.com/2024)
 - [Advent of Code [2023]](https://adventofcode.com/2023)
