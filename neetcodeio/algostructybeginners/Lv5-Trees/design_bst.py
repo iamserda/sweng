@@ -37,8 +37,20 @@ class TreeMap:
                         temp.right = new_node
                 break
 
+    @classmethod
+    def search(cls, key: int, node) -> int:
+        if not isinstance(node, Node):
+            return -1
+        if node.key == key:
+            return node.val
+        if key < node.key:
+            return cls.search(key, node.left)
+        if key > node.key:
+            return cls.search(key, node.right)
+        return -1
+
     def get(self, key: int) -> int:
-        pass
+        return TreeMap.search(key, self.root)
 
     def getMin(self) -> int:
         """return the value mapped to the SMALLEST key in the tree.
@@ -76,9 +88,9 @@ new_tmap.insert("Jordan", 1963)
 new_tmap.insert("Bryant", 1978)
 new_tmap.insert("Messi", 1987)
 assert new_tmap.getInorderKeys() == ["Bryant", "Jordan", "Messi", "Ronaldo"]
-# assert new_tmap.get("Ronaldo") == 1976
-# assert new_tmap.get("Messi") == 1987
-# assert new_tmap.get("Jordan") == 1963
+assert new_tmap.get("Ronaldo") == 1976
+assert new_tmap.get("Messi") == 1987
+assert new_tmap.get("Jordan") == 1963
 # # Kobe's Year of birth, because (B) in key 'Bryant' is first when ordered from left-to-right
 # assert new_tmap.getMin() == 1978
 # # Kobe's Year of birth, because (R) in key 'Ronaldo' is first when ordered from left-to-right
