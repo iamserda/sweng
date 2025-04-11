@@ -55,12 +55,18 @@ class TreeMap:
     def getMin(self) -> int:
         """return the value mapped to the SMALLEST key in the tree.
         If the tree is empty, return -1."""
-        pass
+        temp = self.root
+        while temp and temp.left:
+            temp = temp.left
+        return temp.val
 
     def getMax(self) -> int:
         """Returns the value mapped to the largest key in the tree.
         If the tree is empty, return -1."""
-        pass
+        temp = self.root
+        while temp and temp.right:
+            temp = temp.right
+        return temp.val
 
     def remove(self, key) -> None:
         """Removes the key-value pair with a given key located from the tree."""
@@ -91,10 +97,10 @@ assert new_tmap.getInorderKeys() == ["Bryant", "Jordan", "Messi", "Ronaldo"]
 assert new_tmap.get("Ronaldo") == 1976
 assert new_tmap.get("Messi") == 1987
 assert new_tmap.get("Jordan") == 1963
-# # Kobe's Year of birth, because (B) in key 'Bryant' is first when ordered from left-to-right
-# assert new_tmap.getMin() == 1978
-# # Kobe's Year of birth, because (R) in key 'Ronaldo' is first when ordered from left-to-right
-# assert new_tmap.getMax() == 1976
+# Kobe's Year of birth, because (B) in key 'Bryant' is first when ordered from left-to-right
+assert new_tmap.getMin() == 1978
+# Kobe's Year of birth, because (R) in key 'Ronaldo' is first when ordered from left-to-right
+assert new_tmap.getMax() == 1976
 # new_tmap.remove("Bryant")
 # assert new_tmap.getInorderKeys() == ["Jordan", "Messi", "Ronaldo"]
 # new_tmap.remove("Jordan")
