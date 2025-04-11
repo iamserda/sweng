@@ -1,6 +1,9 @@
 class Node:
     def __init__(self, key, val):
-        pass
+        self.key = key
+        self.val = val
+        self.left = None
+        self.right = None
 
     def __str__(self):
         return f"key:{self.key}, val: {self.val}"
@@ -8,7 +11,7 @@ class Node:
 
 class TreeMap:
     def __init__(self):
-        pass
+        self.root = None
 
     def insert(self, key, val) -> None:
         pass
