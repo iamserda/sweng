@@ -70,7 +70,32 @@ class TreeMap:
 
     def remove(self, key) -> None:
         """Removes the key-value pair with a given key located from the tree."""
-        pass
+
+        def rm(key, node):
+            if node is None:
+                return
+            elif key > node.key:
+                node.right = rm(key, node.right)
+            elif key < node.key:
+                node.left = rm(key, node.left)
+            elif key == node.key:
+                if not node.right and not node.left:
+                    return
+                elif not node.right:
+                    return node.left
+                elif not node.left:
+                    return node.right
+                else:
+                    smallest_node = node.right
+                    while smallest_node and smallest_node.left:
+                        smallest_node = smallest_node.left
+                    node.key = smallest_node.key
+                    node.val = smallest_node.val
+                    node.right = rm(smallest_node.key, node.right)
+            return node
+
+        self.root = rm(key, self.root)
+        return self.root
 
     def dfs(root, arr):
         if not root:
@@ -101,11 +126,11 @@ assert new_tmap.get("Jordan") == 1963
 assert new_tmap.getMin() == 1978
 # Kobe's Year of birth, because (R) in key 'Ronaldo' is first when ordered from left-to-right
 assert new_tmap.getMax() == 1976
-# new_tmap.remove("Bryant")
-# assert new_tmap.getInorderKeys() == ["Jordan", "Messi", "Ronaldo"]
-# new_tmap.remove("Jordan")
-# assert new_tmap.getInorderKeys() == ["Messi", "Ronaldo"]
-# new_tmap.remove("Messi")
-# assert new_tmap.getInorderKeys() == ["Ronaldo"]
-# new_tmap.remove("Ronaldo")
-# assert new_tmap.getInorderKeys() == []
+new_tmap.remove("Bryant")
+assert new_tmap.getInorderKeys() == ["Jordan", "Messi", "Ronaldo"]
+new_tmap.remove("Jordan")
+assert new_tmap.getInorderKeys() == ["Messi", "Ronaldo"]
+new_tmap.remove("Messi")
+assert new_tmap.getInorderKeys() == ["Ronaldo"]
+new_tmap.remove("Ronaldo")
+assert new_tmap.getInorderKeys() == []
