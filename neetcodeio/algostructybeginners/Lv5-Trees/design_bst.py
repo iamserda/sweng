@@ -15,27 +15,30 @@ class TreeMap:
 
     def insert(self, key, val) -> None:
         """Given a key, and a val, creates a node:Node, and insert this node to the TreeMap."""
-        if not key or not val:
+        if (key or val) is None:
             return
         new_node = Node(key, val)
         if not self.root:
             self.root = new_node
-        else:
-            temp = self.root
-            while temp:
-                if new_node.key < temp.key:
-                    if temp.left:
-                        temp = temp.left
-                        continue
-                    else:
-                        temp.left = new_node
+            return
+        temp = self.root
+        while temp:
+            assert isinstance(temp, Node)
+            if new_node.key == temp.key:
+                temp.val = new_node.val
+            elif new_node.key < temp.key:
+                if temp.left:
+                    temp = temp.left
+                    continue
                 else:
-                    if temp.right:
-                        temp = temp.right
-                        continue
-                    else:
-                        temp.right = new_node
-                break
+                    temp.left = new_node
+            else:
+                if temp.right:
+                    temp = temp.right
+                    continue
+                else:
+                    temp.right = new_node
+            return
 
     @classmethod
     def search(cls, key: int, node) -> int:
@@ -134,3 +137,12 @@ new_tmap.remove("Messi")
 assert new_tmap.getInorderKeys() == ["Ronaldo"]
 new_tmap.remove("Ronaldo")
 assert new_tmap.getInorderKeys() == []
+
+# TEST SUITE 2 from Neetcode:
+new_tmap.insert(1, 2)
+new_tmap.insert(4, 2)
+new_tmap.insert(3, 7)
+new_tmap.insert(2, 1)
+assert new_tmap.getInorderKeys() == [1, 2, 3, 4]
+new_tmap.remove(1)
+assert new_tmap.getInorderKeys() == [2, 3, 4]
