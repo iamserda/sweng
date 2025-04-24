@@ -71,4 +71,4 @@ Many courses taught at universities focus way too much on theory and not enough 
 
 ### IMPORTANT:
 
-This repo does NOT intend to copy. I will do my absolute best to NOT copy or ripoff neetcode.io. I think his work is a blessing for people who do not have a CS degree and want to learn algos and structies, and more importantly for those of us who need to understand how to use them effectively! I think the service is well worth the price, so I advise anyone who can afford it to just pay the man.
+This repo does NOT intend to copy. I will do my absolute best to NOT copy or ripoff neetcode.io. I think his work is a blessing for people who do not have a CS degree and want to learn algos and structies. More importantly, his work is of great importance to those of us who need to understand how to use algos and structies effectively! I think the service is well worth the price he charges as well. I strongly recommend the product/service as of mid-2025. These are just my solution to some of the problems on neetcode.io.
