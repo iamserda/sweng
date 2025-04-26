@@ -6,34 +6,34 @@ class Node:
 class MyLinkedList:
 
     def __init__(self):
-        """"""
+        self.head = None
 
-    def get(self, index: int) -> int:
-        """"""
+    def get(self, index: int):
+        pass
 
-    def addAtHead(self, val: int) -> None:
-        """"""
+    def addAtHead(self, val: int):
+        pass
 
-    def addAtTail(self, val: int) -> None:
-        """"""
+    def addAtTail(self, val: int):
+        pass
 
-    def addAtIndex(self, index: int, val: int) -> None:
-        """"""
+    def addAtIndex(self, index: int, val: int):
+        pass
 
-    def deleteAtIndex(self, index: int) -> None:
-        """"""
+    def deleteAtIndex(self, index: int):
+        pass
 
     def print_all(self):
         arr = []
         """For testing purposes"""
         temp = self.head
-        i = 0
+        count = 0
         while temp:
             arr.append(temp.val)
             temp = temp.next
-            i += 1
-        print(arr)
-        print(len(arr))
+            count += 1
+        print(arr, len(arr))
+        return arr
 
 
 # TESTING ARENA:
