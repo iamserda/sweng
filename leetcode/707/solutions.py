@@ -22,6 +22,7 @@ class MyLinkedList:
             else:
                 temp = temp.next
                 i += 1
+        return -1
 
     def addAtHead(self, val: int) -> None:
         new_node = Node(val)
