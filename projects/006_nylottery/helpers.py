@@ -12,16 +12,16 @@ def greeting(user_name=None):
 
 def display_howto():
     message = """\nHere is how to play:
-1. Choose five (5) numbers from 1-70 as your Five-Picks.
-2. Choose one (1) number from 1-25 as your Mega-Ball.
+\n1. Choose five (5) numbers from 1-70 as your Five-Picks.
+\n2. Choose one (1) number from 1-25 as your Mega-Ball.
 \n\nHow to win the Mega Millions jackpot?
-- Match the Five-Picks numbers and the Mega Ball on your ticket.
-- Winning draw game tickets expire one (1) year from the date of the draw."""
+\n- Match the Five-Picks numbers and the Mega Ball on your ticket.
+\n- Winning draw game tickets expire one (1) year from the date of the draw."""
     print(message)
 
 
 def display_prize_info():
-    message = """Winning Prizes List: - Jackpot: Match 5 + Powerball: You win the Mega Jackpot.\n- Second: Match 5: You win a cool $1,000,000 USD.\n- Third: Match 4 + Powerball: You win $10,000 USD.\n- Fourth: Match 4: You win the $500.\n- Fifth: Match 3 + Powerball: You win $200.\n- Sixth: Match 3: You win $10.\n- Seventh: Match 2 + Powerball: You win $10.\n- Eighth: Match 1 + Powerball: You win $4.\n- Ninth: Match Powerball ONLY: You win $2."""
+    message = """Winning Prizes List: \n- Jackpot: Match 5 + Powerball: You win the Mega Jackpot.\n- Second: Match 5: You win a cool $1,000,000 USD.\n- Third: Match 4 + Powerball: You win $10,000 USD.\n- Fourth: Match 4: You win the $500.\n- Fifth: Match 3 + Powerball: You win $200.\n- Sixth: Match 3: You win $10.\n- Seventh: Match 2 + Powerball: You win $10.\n- Eighth: Match 1 + Powerball: You win $4.\n- Ninth: Match Powerball ONLY: You win $2."""
 
     print(message)
 
