@@ -32,7 +32,17 @@ class BinarySearchTree:
         return self.root
 
     def insert_recursive(self, val):
-        pass
+        def _insert(root, val):
+            if root is None:
+                return TreeNode(val)
+            if val > root.val:
+                root.right = _insert(root.right, val)
+            if val < root.val:
+                root.left = _insert(root.left, val)
+            return root
+
+        self.root = _insert(self.root, val)
+        return self.root
 
     def remove(self, val):
         pass
@@ -52,19 +62,28 @@ assert bst.root.left.val == 2
 assert bst.root.right.val == 6
 # bst.remove(6)
 # print(bst.level_order_traversal())
-
-
-# # Testing Arenas:
-# bst_two = BinarySearchTree()
-# bst_two.insert_recursive(4)
-# bst_two.insert_recursive(2)
-# bst_two.insert_recursive(6)
-# assert bst_two.root.val == 4
+# assert bst_two.root.val == 6
 # assert bst_two.root.left.val == 2
-# assert bst_two.root.right.val == 6
+# assert bst_two.root.right.val == None
 # print(bst_two.level_order_traversal())
 
+# bst_two.remove(6)
+# assert bst_two.root.val == 2
+# assert bst_two.root.left.val == None
+# assert bst_two.root.right.val == None
+# print(bst_two.level_order_traversal())
+
+# Testing Arenas:
+bst_two = BinarySearchTree()
+bst_two.insert_recursive(4)
+bst_two.insert_recursive(2)
+bst_two.insert_recursive(6)
+assert bst_two.root.val == 4
+assert bst_two.root.left.val == 2
+assert bst_two.root.right.val == 6
 # bst_two.remove(4)
+# print(bst_two.level_order_traversal())
+
 # assert bst_two.root.val == 6
 # assert bst_two.root.left.val == 2
 # assert bst_two.root.right.val == None
