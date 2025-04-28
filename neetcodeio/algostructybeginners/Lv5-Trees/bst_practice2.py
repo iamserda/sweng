@@ -1,3 +1,6 @@
+from collections import deque
+
+
 class TreeNode:
     def __init__(self, val):
         self.val = val
@@ -70,49 +73,82 @@ class BinarySearchTree:
         return root
 
     def level_order_traversal(self):
-        pass
+        values_at_levels = []
+        if self.root is None:
+            return values_at_levels
+
+        _q = deque()
+        _q.append([self.root])
+        while _q:
+            row_nodes = _q.popleft()
+            row_values = []
+            nodes_children = []
+            for node in row_nodes:
+                row_values.append(node.val)
+                if isinstance(node.left, TreeNode):
+                    nodes_children.append(node.left)
+                if isinstance(node.right, TreeNode):
+                    nodes_children.append(node.right)
+            if len(row_values):
+                values_at_levels.append(row_values)
+            if len(nodes_children):
+                _q.append(nodes_children)
+        return values_at_levels
 
 
 # Testing Arenas:
 bst = BinarySearchTree()
 bst.insert(4)
+print(bst.level_order_traversal())
 bst.insert(2)
+print(bst.level_order_traversal())
 bst.insert(4)
+print(bst.level_order_traversal())
 bst.insert(6)
+print(bst.level_order_traversal())
 assert bst.root.val == 4
 assert bst.root.left.val == 2
 assert bst.root.right.val == 6
+
 bst.remove(4)
-# print(bst.level_order_traversal())
 assert bst.root.val == 6
 assert bst.root.left.val == 2
 assert bst.root.right is None
-# print(bst_two.level_order_traversal())
+print(bst.level_order_traversal())
 
 bst.remove(6)
 assert bst.root.val == 2
 assert bst.root.left is None
 assert bst.root.right is None
-# print(bst_two.level_order_traversal())
+print(bst.level_order_traversal())
 
-# Testing Arenas:
+bst.remove(2)
+assert bst.root is None
+print(bst.level_order_traversal())
+
 bst_two = BinarySearchTree()
 bst_two.insert_recursive(4)
+print(bst_two.level_order_traversal())
 bst_two.insert_recursive(2)
+print(bst_two.level_order_traversal())
 bst_two.insert_recursive(6)
+print(bst_two.level_order_traversal())
 assert bst_two.root.val == 4
 assert bst_two.root.left.val == 2
 assert bst_two.root.right.val == 6
-bst_two.remove(4)
-# print(bst_two.level_order_traversal())
 
+bst_two.remove(4)
 assert bst_two.root.val == 6
 assert bst_two.root.left.val == 2
 assert bst_two.root.right is None
-# print(bst_two.level_order_traversal())
+print(bst_two.level_order_traversal())
 
 bst_two.remove(6)
 assert bst_two.root.val == 2
 assert bst_two.root.left is None
 assert bst_two.root.right is None
-# print(bst_two.level_order_traversal())
+print(bst_two.level_order_traversal())
+
+bst_two.remove(2)
+assert bst_two.root is None
+print(bst_two.level_order_traversal())
