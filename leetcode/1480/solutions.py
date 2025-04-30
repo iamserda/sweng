@@ -1,6 +1,12 @@
 class Solution:
     def running_sum(self, nums: list[int]) -> list[int]:
-        pass
+        arr = []
+        for elem in nums:
+            if not arr:
+                arr.append(elem)
+            else:
+                arr.append(elem + arr[-1])
+        return arr
 
 
 # Testing Arena:
