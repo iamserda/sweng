@@ -91,6 +91,20 @@ class BinarySearchTree:
                     qu.appendleft(level_children_nodes)
         return levels_arr
 
+    def inoder_traversal(self, arr=[]):
+        if not self.root:
+            return arr
+
+        def inorder(root, arr):
+            if not root:
+                return
+            inorder(root.left, arr)
+            arr.append(root.value)
+            inorder(root.right, arr)
+
+        inorder(self.root, arr)
+        return arr
+
 
 my_bst = BinarySearchTree()
 my_bst.insert(8)
@@ -106,4 +120,5 @@ for i in range(2, 16, 2):
 
 print(my_bst.level_order_traversal())
 my_bst.remove(4)
-print(my_bst.level_order_traversal())
+print("Traversed by Level:", my_bst.level_order_traversal())
+print(f"Traversed in Order: {my_bst.inoder_traversal()}")
