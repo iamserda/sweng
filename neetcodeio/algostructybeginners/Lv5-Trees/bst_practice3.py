@@ -47,9 +47,6 @@ class BinarySearchTree:
         return self.root
 
     def remove(self, value):
-        if not self.root:
-            return
-
         def rm(root, value):
             if value > root.value:
                 root.right = rm(root.right, value)
@@ -67,8 +64,9 @@ class BinarySearchTree:
                 root.right = rm(root.right, temp.value)
             return root
 
-        self.root = rm(self.root, value)
-        return self.root
+        if isinstance(self.root, TreeNode):
+            self.root = rm(self.root, value)
+            return self.root
 
     def level_order_traversal(self):
         levels_arr = []
