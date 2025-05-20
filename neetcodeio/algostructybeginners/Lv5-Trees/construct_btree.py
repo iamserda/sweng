@@ -17,6 +17,9 @@ class Solution:
         cls.dfs(root.right)
 
     def buildTree(self, preorder: list[int], inorder: list[int]) -> list[TreeNode]:
+        if not preorder or not inorder:
+            return
+
         root = TreeNode(preorder[0])
         left = True
         for idx in range(len(inorder)):
