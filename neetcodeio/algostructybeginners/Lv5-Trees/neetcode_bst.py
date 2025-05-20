@@ -1,5 +1,6 @@
 from collections import deque
 
+
 class TreeNode:
     def __init__(self, val):
         self.val = val
@@ -64,10 +65,12 @@ def level_order_traversal(root):
 root = TreeNode(8)
 print("Pre:", level_order_traversal(root))
 for num in [12, 4, 10, 14, 2, 6]:
+    print(f"Adding: {num}")
     root = insert(root, num)
-print("Post addition:", level_order_traversal(root))
+    print("Post addition:", level_order_traversal(root))
 
 print("Pre Removal:", level_order_traversal(root))
 for num in [8, 12, 4, 10, 14, 2, 6]:
+    print(f"Removing: {num}")
     root = remove(root, num)
-print("Pre Removal:", level_order_traversal(root))
+    print("Pre Removal:", level_order_traversal(root))
