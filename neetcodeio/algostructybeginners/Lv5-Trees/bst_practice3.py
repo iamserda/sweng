@@ -46,27 +46,30 @@ class BinarySearchTree:
                 break
         return self.root
 
-    def remove(self, value):
-        def rm(root, value):
-            if value > root.value:
-                root.right = rm(root.right, value)
-            elif value < root.value:
-                root.left = rm(root.left, value)
-            else:
-                if not root.left:
-                    return root.right
-                if not root.right:
-                    return root.left
-                temp = root.right
-                while temp and temp.left:
-                    temp = temp.left
-                root.value = temp.value
-                root.right = rm(root.right, temp.value)
-            return root
+    @staticmethod
+    def rm(current, value):
+        if isinstance(current, TreeNode):
+            if value > current.value:
+                current.right = BinarySearchTree.rm(current.right, value)
+            elif value < current.value:
+                current.left = BinarySearchTree.rm(current.left, value)
+            elif value == current.value:
+                if current.left is None:
+                    return current.right
+                if current.right is None:
+                    return current.left
+                else:
+                    smallest = current.right
+                    while smallest and smallest.left:
+                        smallest = smallest.left
+                    current.value = smallest.value
+                    current.right = BinarySearchTree.rm(current.right, value)
+            return current
 
-        if isinstance(self.root, TreeNode):
-            self.root = rm(self.root, value)
-            return self.root
+    def remove(self, value):
+        if self.root is not None:
+            self.root = BinarySearchTree.rm(self.root, value)
+        return self.root
 
     def level_order_traversal(self):
         levels_arr = []
