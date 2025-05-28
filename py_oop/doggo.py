@@ -8,13 +8,13 @@ class Animal:
 
 class Dog(Animal):
     def __init__(self, name):
-        super().__init__(name)
+        Animal.__init__(self, name)
 
     def bark(self):
         return "woofl woofl"
 
     def action(self):
-        return super().action()
+        return Animal.action(self)
 
 
 lola = Animal("Lola Animal")
