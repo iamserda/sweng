@@ -1,6 +1,26 @@
 class Solution:
     def combinationSum(self, candidates: list[int], target: int) -> list[list[int]]:
-        pass
+        results = list()
+        candidates.sort()
+
+        def dfs_with_backtracking(start_index=0, valid_candidates=None, remaining=None):
+            if valid_candidates is None:
+                valid_candidates = []
+            if remaining == 0:
+                results.append(list(valid_candidates))
+                return
+            for index in range(start_index, len(candidates)):
+                # Early stopping: since candidates are sorted, no need to check further
+                if candidates[index] > remaining:
+                    break
+                valid_candidates.append(candidates[index])
+                dfs_with_backtracking(
+                    index, valid_candidates, remaining - candidates[index]
+                )
+                valid_candidates.pop()
+
+        dfs_with_backtracking(start_index=0, valid_candidates=[], remaining=target)
+        return results
 
 
 sol = Solution()
