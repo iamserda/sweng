@@ -1,0 +1,1918 @@
+[
+    {
+        "id": "NsHtwZBpio1jKfA7CwHZOA",
+        "alias": "starbucks-reserve-roastery-new-york-11",
+        "name": "Starbucks Reserve Roastery",
+        "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/MhTbvkcGr5HfTVCAJj1mFg/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/starbucks-reserve-roastery-new-york-11?adjust_creative=DZswlMOdVwhr_natoNsEVw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DZswlMOdVwhr_natoNsEVw",
+        "review_count": 1080,
+        "categories": [
+            {
+                "alias": "coffeeroasteries",
+                "title": "Coffee Roasteries"
+            }
+        ],
+        "rating": 4.0,
+        "coordinates": {
+            "latitude": 40.74158466103329,
+            "longitude": -74.00515490000073
+        },
+        "transactions": [],
+        "price": "$$",
+        "location": {
+            "address1": "61 9th Ave",
+            "address2": "",
+            "address3": null,
+            "city": "New York",
+            "zip_code": "10011",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "61 9th Ave",
+                "New York, NY 10011"
+            ]
+        },
+        "phone": "+12126910531",
+        "display_phone": "(212) 691-0531",
+        "distance": 4121.482965483417,
+        "business_hours": [
+            {
+                "open": [
+                    {
+                        "is_overnight": false,
+                        "start": "0800",
+                        "end": "2200",
+                        "day": 0
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0800",
+                        "end": "2200",
+                        "day": 1
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0800",
+                        "end": "2200",
+                        "day": 2
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0800",
+                        "end": "2200",
+                        "day": 3
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0800",
+                        "end": "2300",
+                        "day": 4
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0800",
+                        "end": "2300",
+                        "day": 5
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0800",
+                        "end": "2200",
+                        "day": 6
+                    }
+                ],
+                "hours_type": "REGULAR",
+                "is_open_now": true
+            }
+        ],
+        "attributes": {
+            "business_temp_closed": null,
+            "menu_url": "https://www.starbucksreserve.com/en-us/menus",
+            "waitlist_reservation": null
+        }
+    },
+    {
+        "id": "AvpB-RQgEW9N4Eip3l3cww",
+        "alias": "starbucks-new-york-553",
+        "name": "Starbucks",
+        "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/ikNun5R6-9VaSI1sHEg8FQ/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/starbucks-new-york-553?adjust_creative=DZswlMOdVwhr_natoNsEVw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DZswlMOdVwhr_natoNsEVw",
+        "review_count": 68,
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee & Tea"
+            }
+        ],
+        "rating": 2.3,
+        "coordinates": {
+            "latitude": 40.7224629,
+            "longitude": -73.9978143
+        },
+        "transactions": [
+            "delivery"
+        ],
+        "price": "$$",
+        "location": {
+            "address1": "72 Spring St",
+            "address2": "",
+            "address3": null,
+            "city": "New York",
+            "zip_code": "10012",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "72 Spring St",
+                "New York, NY 10012"
+            ]
+        },
+        "phone": "+12122192961",
+        "display_phone": "(212) 219-2961",
+        "distance": 1915.4464368276865,
+        "business_hours": [
+            {
+                "open": [
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "2030",
+                        "day": 0
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "2030",
+                        "day": 1
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "2030",
+                        "day": 2
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "2030",
+                        "day": 3
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "2030",
+                        "day": 4
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0630",
+                        "end": "2100",
+                        "day": 5
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0630",
+                        "end": "2100",
+                        "day": 6
+                    }
+                ],
+                "hours_type": "REGULAR",
+                "is_open_now": true
+            }
+        ],
+        "attributes": {
+            "business_temp_closed": null,
+            "menu_url": null,
+            "waitlist_reservation": null
+        }
+    },
+    {
+        "id": "qcnoyytlFIuqlcjDXkXJiw",
+        "alias": "starbucks-brooklyn-21",
+        "name": "Starbucks",
+        "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/WK7e1gPOWcqEV_WSXIuFkA/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/starbucks-brooklyn-21?adjust_creative=DZswlMOdVwhr_natoNsEVw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DZswlMOdVwhr_natoNsEVw",
+        "review_count": 87,
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee & Tea"
+            }
+        ],
+        "rating": 2.6,
+        "coordinates": {
+            "latitude": 40.70275444,
+            "longitude": -73.99088374
+        },
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "price": "$$",
+        "location": {
+            "address1": "67 Main St",
+            "address2": "",
+            "address3": "",
+            "city": "Brooklyn",
+            "zip_code": "11201",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "67 Main St",
+                "Brooklyn, NY 11201"
+            ]
+        },
+        "phone": "+17188550856",
+        "display_phone": "(718) 855-0856",
+        "distance": 414.84680219460824,
+        "business_hours": [
+            {
+                "open": [
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "2030",
+                        "day": 0
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "2030",
+                        "day": 1
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "2030",
+                        "day": 2
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "2030",
+                        "day": 3
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "2030",
+                        "day": 4
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "2030",
+                        "day": 5
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "2030",
+                        "day": 6
+                    }
+                ],
+                "hours_type": "REGULAR",
+                "is_open_now": true
+            }
+        ],
+        "attributes": {
+            "business_temp_closed": null,
+            "menu_url": "http://www.starbucks.com/menu",
+            "waitlist_reservation": null
+        }
+    },
+    {
+        "id": "chLhbhg91BAxxxYUdcHmFA",
+        "alias": "starbucks-new-york-428",
+        "name": "STARBUCKS",
+        "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/yg6oEh03FJraK0lk7FD_DA/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/starbucks-new-york-428?adjust_creative=DZswlMOdVwhr_natoNsEVw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DZswlMOdVwhr_natoNsEVw",
+        "review_count": 165,
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee & Tea"
+            }
+        ],
+        "rating": 2.4,
+        "coordinates": {
+            "latitude": 40.71933300000007,
+            "longitude": -73.989977
+        },
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "price": "$$",
+        "location": {
+            "address1": "80 Delancey St",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10002",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "80 Delancey St",
+                "New York, NY 10002"
+            ]
+        },
+        "phone": "+19175341397",
+        "display_phone": "(917) 534-1397",
+        "distance": 1586.559591362194,
+        "business_hours": [
+            {
+                "open": [
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "2000",
+                        "day": 0
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "2000",
+                        "day": 1
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "2000",
+                        "day": 2
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "2000",
+                        "day": 3
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "2000",
+                        "day": 4
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "2000",
+                        "day": 5
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "2000",
+                        "day": 6
+                    }
+                ],
+                "hours_type": "REGULAR",
+                "is_open_now": true
+            }
+        ],
+        "attributes": {
+            "business_temp_closed": null,
+            "menu_url": "http://www.starbucks.com/menu/food",
+            "waitlist_reservation": null
+        }
+    },
+    {
+        "id": "iRIFxqPFUput8-mKrgtZDA",
+        "alias": "starbucks-new-york-487",
+        "name": "Starbucks",
+        "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/O79oL0su_fFqTLtSWMrA0g/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/starbucks-new-york-487?adjust_creative=DZswlMOdVwhr_natoNsEVw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DZswlMOdVwhr_natoNsEVw",
+        "review_count": 70,
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee & Tea"
+            }
+        ],
+        "rating": 3.8,
+        "coordinates": {
+            "latitude": 40.779873936209256,
+            "longitude": -73.9597579
+        },
+        "transactions": [],
+        "price": "$",
+        "location": {
+            "address1": "1142 Madison Ave",
+            "address2": null,
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10028",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "1142 Madison Ave",
+                "New York, NY 10028"
+            ]
+        },
+        "phone": "+12122881506",
+        "display_phone": "(212) 288-1506",
+        "distance": 8772.647528645084,
+        "business_hours": [
+            {
+                "open": [
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "1930",
+                        "day": 0
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "1930",
+                        "day": 1
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "1930",
+                        "day": 2
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "1930",
+                        "day": 3
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "1930",
+                        "day": 4
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "2000",
+                        "day": 5
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "2000",
+                        "day": 6
+                    }
+                ],
+                "hours_type": "REGULAR",
+                "is_open_now": true
+            }
+        ],
+        "attributes": {
+            "business_temp_closed": null,
+            "menu_url": "http://www.starbucks.com/menu",
+            "waitlist_reservation": null
+        }
+    },
+    {
+        "id": "iWoOAvIYqZ8nqx1BYcuZYw",
+        "alias": "starbucks-new-york-537",
+        "name": "Starbucks",
+        "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/1wQOPFNtalcyXkM8JYxOHg/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/starbucks-new-york-537?adjust_creative=DZswlMOdVwhr_natoNsEVw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DZswlMOdVwhr_natoNsEVw",
+        "review_count": 29,
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee & Tea"
+            }
+        ],
+        "rating": 2.9,
+        "coordinates": {
+            "latitude": 40.719757,
+            "longitude": -73.99913
+        },
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "price": "$",
+        "location": {
+            "address1": "157 Lafayette St",
+            "address2": "",
+            "address3": "157 Lafayette",
+            "city": "New York",
+            "zip_code": "10013",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "157 Lafayette St",
+                "157 Lafayette",
+                "New York, NY 10013"
+            ]
+        },
+        "phone": "+16468384269",
+        "display_phone": "(646) 838-4269",
+        "distance": 1642.8201284134223,
+        "business_hours": [
+            {
+                "open": [
+                    {
+                        "is_overnight": false,
+                        "start": "0700",
+                        "end": "2000",
+                        "day": 0
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0700",
+                        "end": "2000",
+                        "day": 1
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0700",
+                        "end": "2000",
+                        "day": 2
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0700",
+                        "end": "2000",
+                        "day": 3
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0700",
+                        "end": "2000",
+                        "day": 4
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0700",
+                        "end": "2000",
+                        "day": 5
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0700",
+                        "end": "1900",
+                        "day": 6
+                    }
+                ],
+                "hours_type": "REGULAR",
+                "is_open_now": true
+            }
+        ],
+        "attributes": {
+            "business_temp_closed": null,
+            "menu_url": null,
+            "waitlist_reservation": null
+        }
+    },
+    {
+        "id": "60agfQbky4cX8BEApyltIA",
+        "alias": "starbucks-new-york-524",
+        "name": "Starbucks",
+        "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/4yeFklTEjNlwf5X6j3-g2g/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/starbucks-new-york-524?adjust_creative=DZswlMOdVwhr_natoNsEVw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DZswlMOdVwhr_natoNsEVw",
+        "review_count": 44,
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee & Tea"
+            }
+        ],
+        "rating": 2.3,
+        "coordinates": {
+            "latitude": 40.71102,
+            "longitude": -74.00091
+        },
+        "transactions": [
+            "delivery"
+        ],
+        "price": "$",
+        "location": {
+            "address1": "375 Pearl St",
+            "address2": "",
+            "address3": null,
+            "city": "New York",
+            "zip_code": "10038",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "375 Pearl St",
+                "New York, NY 10038"
+            ]
+        },
+        "phone": "+16466999983",
+        "display_phone": "(646) 699-9983",
+        "distance": 833.8892691487212,
+        "business_hours": [
+            {
+                "open": [
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "1700",
+                        "day": 0
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "1700",
+                        "day": 1
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "1700",
+                        "day": 2
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "1700",
+                        "day": 3
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "1700",
+                        "day": 4
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0700",
+                        "end": "1700",
+                        "day": 5
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0700",
+                        "end": "1700",
+                        "day": 6
+                    }
+                ],
+                "hours_type": "REGULAR",
+                "is_open_now": true
+            }
+        ],
+        "attributes": {
+            "business_temp_closed": null,
+            "menu_url": "https://www.starbucks.com/menu",
+            "waitlist_reservation": null
+        }
+    },
+    {
+        "id": "zKrj6ADYDWPzD-jozbYrww",
+        "alias": "starbucks-new-york-601",
+        "name": "Starbucks",
+        "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/kvGcUnD1WIbIatmufYhLNw/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/starbucks-new-york-601?adjust_creative=DZswlMOdVwhr_natoNsEVw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DZswlMOdVwhr_natoNsEVw",
+        "review_count": 18,
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee & Tea"
+            },
+            {
+                "alias": "breakfast_brunch",
+                "title": "Breakfast & Brunch"
+            },
+            {
+                "alias": "bagels",
+                "title": "Bagels"
+            }
+        ],
+        "rating": 4.8,
+        "coordinates": {
+            "latitude": 40.72023566,
+            "longitude": -74.00095858
+        },
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "location": {
+            "address1": "444 Broadway",
+            "address2": "",
+            "address3": null,
+            "city": "New York",
+            "zip_code": "10013",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "444 Broadway",
+                "New York, NY 10013"
+            ]
+        },
+        "phone": "+12122192277",
+        "display_phone": "(212) 219-2277",
+        "distance": 1737.9611147993944,
+        "business_hours": [
+            {
+                "open": [
+                    {
+                        "is_overnight": false,
+                        "start": "0700",
+                        "end": "1930",
+                        "day": 0
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0700",
+                        "end": "1930",
+                        "day": 1
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0700",
+                        "end": "1930",
+                        "day": 2
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0700",
+                        "end": "1930",
+                        "day": 3
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0700",
+                        "end": "2000",
+                        "day": 4
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0700",
+                        "end": "2000",
+                        "day": 5
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0700",
+                        "end": "1930",
+                        "day": 6
+                    }
+                ],
+                "hours_type": "REGULAR",
+                "is_open_now": true
+            }
+        ],
+        "attributes": {
+            "business_temp_closed": null,
+            "menu_url": null,
+            "open24_hours": null,
+            "waitlist_reservation": null
+        }
+    },
+    {
+        "id": "K6x7wyqA2iOBjWIhMvOBVQ",
+        "alias": "starbucks-new-york-140",
+        "name": "Starbucks",
+        "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/5eHzUnjm4jRdP82lv1HpLg/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/starbucks-new-york-140?adjust_creative=DZswlMOdVwhr_natoNsEVw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DZswlMOdVwhr_natoNsEVw",
+        "review_count": 87,
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee & Tea"
+            }
+        ],
+        "rating": 2.6,
+        "coordinates": {
+            "latitude": 40.72725151,
+            "longitude": -73.99551355
+        },
+        "transactions": [
+            "delivery"
+        ],
+        "price": "$",
+        "location": {
+            "address1": "665 Broadway",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10012",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "665 Broadway",
+                "New York, NY 10012"
+            ]
+        },
+        "phone": "+19175340799",
+        "display_phone": "(917) 534-0799",
+        "distance": 2426.9659276947527,
+        "business_hours": [
+            {
+                "open": [
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "2000",
+                        "day": 0
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "2000",
+                        "day": 1
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "2000",
+                        "day": 2
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "2000",
+                        "day": 3
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "2000",
+                        "day": 4
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0630",
+                        "end": "2000",
+                        "day": 5
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0630",
+                        "end": "2000",
+                        "day": 6
+                    }
+                ],
+                "hours_type": "REGULAR",
+                "is_open_now": true
+            }
+        ],
+        "attributes": {
+            "business_temp_closed": null,
+            "menu_url": "http://www.starbucks.com/menu",
+            "waitlist_reservation": null
+        }
+    },
+    {
+        "id": "hWNIU-r6lzdYAIs_fyaRkw",
+        "alias": "starbucks-new-york-153",
+        "name": "Starbucks",
+        "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/LTyGtyXsGty8ayy2cldgKA/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/starbucks-new-york-153?adjust_creative=DZswlMOdVwhr_natoNsEVw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DZswlMOdVwhr_natoNsEVw",
+        "review_count": 225,
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee & Tea"
+            }
+        ],
+        "rating": 2.9,
+        "coordinates": {
+            "latitude": 40.7331755,
+            "longitude": -74.00277602
+        },
+        "transactions": [
+            "delivery"
+        ],
+        "price": "$$",
+        "location": {
+            "address1": "72 Grove St",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10014",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "72 Grove St",
+                "New York, NY 10014"
+            ]
+        },
+        "phone": "+16464862216",
+        "display_phone": "(646) 486-2216",
+        "distance": 3165.2910970482394,
+        "business_hours": [
+            {
+                "open": [
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "2000",
+                        "day": 0
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "2000",
+                        "day": 1
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "2000",
+                        "day": 2
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "2000",
+                        "day": 3
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "2000",
+                        "day": 4
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0700",
+                        "end": "2000",
+                        "day": 5
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0700",
+                        "end": "2000",
+                        "day": 6
+                    }
+                ],
+                "hours_type": "REGULAR",
+                "is_open_now": true
+            }
+        ],
+        "attributes": {
+            "business_temp_closed": null,
+            "menu_url": "https://www.starbucks.com/menu",
+            "waitlist_reservation": null
+        }
+    },
+    {
+        "id": "pTZp1Lhdptd9b2HnIej6dg",
+        "alias": "starbucks-new-york-210",
+        "name": "Starbucks",
+        "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/lb6BYnWalDe2vN-u3YTwDg/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/starbucks-new-york-210?adjust_creative=DZswlMOdVwhr_natoNsEVw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DZswlMOdVwhr_natoNsEVw",
+        "review_count": 68,
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee & Tea"
+            }
+        ],
+        "rating": 2.4,
+        "coordinates": {
+            "latitude": 40.73085266506367,
+            "longitude": -73.98321619446361
+        },
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "price": "$$",
+        "location": {
+            "address1": "219 1st Ave",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10003",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "219 1st Ave",
+                "New York, NY 10003"
+            ]
+        },
+        "phone": "+12122540358",
+        "display_phone": "(212) 254-0358",
+        "distance": 2975.4575942186575,
+        "business_hours": [
+            {
+                "open": [
+                    {
+                        "is_overnight": false,
+                        "start": "0500",
+                        "end": "2030",
+                        "day": 0
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0500",
+                        "end": "2030",
+                        "day": 1
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0500",
+                        "end": "2030",
+                        "day": 2
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0500",
+                        "end": "2030",
+                        "day": 3
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0500",
+                        "end": "2030",
+                        "day": 4
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "1900",
+                        "day": 5
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "1900",
+                        "day": 6
+                    }
+                ],
+                "hours_type": "REGULAR",
+                "is_open_now": true
+            }
+        ],
+        "attributes": {
+            "business_temp_closed": null,
+            "menu_url": "http://www.starbucks.com/menu/food",
+            "waitlist_reservation": null
+        }
+    },
+    {
+        "id": "KErqx85gjvz5vaS4lnmpoQ",
+        "alias": "starbucks-reserve-new-york-10",
+        "name": "Starbucks Reserve",
+        "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/sitPU5PAolEJgH4nRasnug/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/starbucks-reserve-new-york-10?adjust_creative=DZswlMOdVwhr_natoNsEVw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DZswlMOdVwhr_natoNsEVw",
+        "review_count": 135,
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee & Tea"
+            }
+        ],
+        "rating": 3.7,
+        "coordinates": {
+            "latitude": 40.73709133,
+            "longitude": -74.00069681
+        },
+        "transactions": [
+            "delivery"
+        ],
+        "price": "$$",
+        "location": {
+            "address1": "1 7th Ave",
+            "address2": "",
+            "address3": null,
+            "city": "New York",
+            "zip_code": "10011",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "1 7th Ave",
+                "New York, NY 10011"
+            ]
+        },
+        "phone": "+12126272822",
+        "display_phone": "(212) 627-2822",
+        "distance": 3511.6937905233153,
+        "business_hours": [
+            {
+                "open": [
+                    {
+                        "is_overnight": false,
+                        "start": "0700",
+                        "end": "2100",
+                        "day": 0
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0700",
+                        "end": "2100",
+                        "day": 1
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0700",
+                        "end": "2100",
+                        "day": 2
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0700",
+                        "end": "2100",
+                        "day": 3
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0700",
+                        "end": "2100",
+                        "day": 4
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0700",
+                        "end": "2100",
+                        "day": 5
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0700",
+                        "end": "2100",
+                        "day": 6
+                    }
+                ],
+                "hours_type": "REGULAR",
+                "is_open_now": true
+            }
+        ],
+        "attributes": {
+            "business_temp_closed": null,
+            "menu_url": "http://www.starbucks.com/menu",
+            "waitlist_reservation": null
+        }
+    },
+    {
+        "id": "mEMPhPK6dSgy5eXS-kYHLg",
+        "alias": "starbucks-brooklyn-17",
+        "name": "Starbucks",
+        "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/DDS4CsB_eNrP7GoAvyAAQw/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/starbucks-brooklyn-17?adjust_creative=DZswlMOdVwhr_natoNsEVw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DZswlMOdVwhr_natoNsEVw",
+        "review_count": 72,
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee & Tea"
+            }
+        ],
+        "rating": 3.1,
+        "coordinates": {
+            "latitude": 40.694532,
+            "longitude": -73.99399
+        },
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "price": "$$",
+        "location": {
+            "address1": "134 Montague St",
+            "address2": "",
+            "address3": "",
+            "city": "Brooklyn",
+            "zip_code": "11201",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "134 Montague St",
+                "Brooklyn, NY 11201"
+            ]
+        },
+        "phone": "+17182430455",
+        "display_phone": "(718) 243-0455",
+        "distance": 1214.9063524320673,
+        "business_hours": [
+            {
+                "open": [
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "2000",
+                        "day": 0
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "2000",
+                        "day": 1
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "2000",
+                        "day": 2
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "2000",
+                        "day": 3
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "2000",
+                        "day": 4
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0630",
+                        "end": "2000",
+                        "day": 5
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0630",
+                        "end": "1900",
+                        "day": 6
+                    }
+                ],
+                "hours_type": "REGULAR",
+                "is_open_now": true
+            }
+        ],
+        "attributes": {
+            "business_temp_closed": null,
+            "menu_url": "http://www.starbucks.com/menu",
+            "waitlist_reservation": null
+        }
+    },
+    {
+        "id": "j45W-e_Y4YGJxRxjI1CoCQ",
+        "alias": "starbucks-new-york-180",
+        "name": "Starbucks",
+        "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/ramCeqXOEApuPbTykkTyqg/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/starbucks-new-york-180?adjust_creative=DZswlMOdVwhr_natoNsEVw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DZswlMOdVwhr_natoNsEVw",
+        "review_count": 40,
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee & Tea"
+            }
+        ],
+        "rating": 3.2,
+        "coordinates": {
+            "latitude": 40.7248169,
+            "longitude": -73.98763141
+        },
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "price": "$",
+        "location": {
+            "address1": "49 1st Ave",
+            "address2": "Ste 2",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10003",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "49 1st Ave",
+                "Ste 2",
+                "New York, NY 10003"
+            ]
+        },
+        "phone": "+12127771752",
+        "display_phone": "(212) 777-1752",
+        "distance": 2226.0414849843187,
+        "business_hours": [
+            {
+                "open": [
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "1930",
+                        "day": 0
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "1930",
+                        "day": 1
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "1930",
+                        "day": 2
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "1930",
+                        "day": 3
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "1930",
+                        "day": 4
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0700",
+                        "end": "1930",
+                        "day": 5
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0700",
+                        "end": "1930",
+                        "day": 6
+                    }
+                ],
+                "hours_type": "REGULAR",
+                "is_open_now": true
+            }
+        ],
+        "attributes": {
+            "business_temp_closed": null,
+            "menu_url": "http://www.starbucks.com/menu",
+            "waitlist_reservation": null
+        }
+    },
+    {
+        "id": "lNY8FMxryObIJDo-06OVlg",
+        "alias": "starbucks-new-york-168",
+        "name": "Starbucks",
+        "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/5t5itk_JTP_6IgElZ8A6dg/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/starbucks-new-york-168?adjust_creative=DZswlMOdVwhr_natoNsEVw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DZswlMOdVwhr_natoNsEVw",
+        "review_count": 177,
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee & Tea"
+            }
+        ],
+        "rating": 2.5,
+        "coordinates": {
+            "latitude": 40.73480556293381,
+            "longitude": -73.98976499999999
+        },
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "price": "$$",
+        "location": {
+            "address1": "10 Union Square E",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10003",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "10 Union Square E",
+                "New York, NY 10003"
+            ]
+        },
+        "phone": "+12129828426",
+        "display_phone": "(212) 982-8426",
+        "distance": 3286.9848516047423,
+        "business_hours": [
+            {
+                "open": [
+                    {
+                        "is_overnight": false,
+                        "start": "0500",
+                        "end": "2100",
+                        "day": 0
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0500",
+                        "end": "2130",
+                        "day": 1
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "2130",
+                        "day": 2
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0700",
+                        "end": "2000",
+                        "day": 3
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "2130",
+                        "day": 4
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "2030",
+                        "day": 5
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "2030",
+                        "day": 6
+                    }
+                ],
+                "hours_type": "REGULAR",
+                "is_open_now": true
+            }
+        ],
+        "attributes": {
+            "business_temp_closed": null,
+            "menu_url": "https://www.starbucks.com/menu",
+            "waitlist_reservation": null
+        }
+    },
+    {
+        "id": "z6VEgG6Ow0wdvHzaZou8EA",
+        "alias": "starbucks-brooklyn-60",
+        "name": "Starbucks",
+        "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/s0_0fOhC_nxbXEfdEpxBxQ/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/starbucks-brooklyn-60?adjust_creative=DZswlMOdVwhr_natoNsEVw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DZswlMOdVwhr_natoNsEVw",
+        "review_count": 21,
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee & Tea"
+            }
+        ],
+        "rating": 3.4,
+        "coordinates": {
+            "latitude": 40.723415,
+            "longitude": -73.95143391
+        },
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "location": {
+            "address1": "66 Nassau Ave",
+            "address2": "",
+            "address3": null,
+            "city": "Brooklyn",
+            "zip_code": "11222",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "66 Nassau Ave",
+                "Brooklyn, NY 11222"
+            ]
+        },
+        "phone": "+17183833750",
+        "display_phone": "(718) 383-3750",
+        "distance": 4128.11425600186,
+        "business_hours": [
+            {
+                "open": [
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "1930",
+                        "day": 0
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "1930",
+                        "day": 1
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "1930",
+                        "day": 2
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "1930",
+                        "day": 3
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "1930",
+                        "day": 4
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "1900",
+                        "day": 5
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "1900",
+                        "day": 6
+                    }
+                ],
+                "hours_type": "REGULAR",
+                "is_open_now": true
+            }
+        ],
+        "attributes": {
+            "business_temp_closed": null,
+            "menu_url": null,
+            "waitlist_reservation": null
+        }
+    },
+    {
+        "id": "eSO_9YbzxMcDAYlru7x0Sg",
+        "alias": "starbucks-new-york-545",
+        "name": "Starbucks",
+        "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/T_Xe3cxOzyS7YMdgEW7jWQ/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/starbucks-new-york-545?adjust_creative=DZswlMOdVwhr_natoNsEVw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DZswlMOdVwhr_natoNsEVw",
+        "review_count": 33,
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee & Tea"
+            }
+        ],
+        "rating": 2.1,
+        "coordinates": {
+            "latitude": 40.72692264,
+            "longitude": -73.98323616
+        },
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "location": {
+            "address1": "125 Saint Marks Pl",
+            "address2": null,
+            "address3": null,
+            "city": "New York",
+            "zip_code": "10009",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "125 Saint Marks Pl",
+                "New York, NY 10009"
+            ]
+        },
+        "phone": "+19176483955",
+        "display_phone": "(917) 648-3955",
+        "distance": 2563.5910186651495,
+        "business_hours": [
+            {
+                "open": [
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "1900",
+                        "day": 0
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "1900",
+                        "day": 1
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "1900",
+                        "day": 2
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "1900",
+                        "day": 3
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0600",
+                        "end": "1900",
+                        "day": 4
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0700",
+                        "end": "1900",
+                        "day": 5
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0700",
+                        "end": "1900",
+                        "day": 6
+                    }
+                ],
+                "hours_type": "REGULAR",
+                "is_open_now": true
+            }
+        ],
+        "attributes": {
+            "business_temp_closed": null,
+            "menu_url": null,
+            "waitlist_reservation": null
+        }
+    },
+    {
+        "id": "tLonaIvNCHQI-9cDvo_dyQ",
+        "alias": "starbucks-long-island-city-3",
+        "name": "Starbucks",
+        "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/2_xIQG66VMaG1bmK2s581A/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/starbucks-long-island-city-3?adjust_creative=DZswlMOdVwhr_natoNsEVw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DZswlMOdVwhr_natoNsEVw",
+        "review_count": 48,
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee & Tea"
+            }
+        ],
+        "rating": 3.3,
+        "coordinates": {
+            "latitude": 40.74711315536996,
+            "longitude": -73.94172101165964
+        },
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "price": "$$",
+        "location": {
+            "address1": "26-14 Jackson Ave",
+            "address2": "",
+            "address3": null,
+            "city": "Long Island City",
+            "zip_code": "11101",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "26-14 Jackson Ave",
+                "Long Island City, NY 11101"
+            ]
+        },
+        "phone": "+13475332101",
+        "display_phone": "(347) 533-2101",
+        "distance": 6410.413194096246,
+        "business_hours": [
+            {
+                "open": [
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "1930",
+                        "day": 0
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "1930",
+                        "day": 1
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "1930",
+                        "day": 2
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "1930",
+                        "day": 3
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "1930",
+                        "day": 4
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "1930",
+                        "day": 5
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "1930",
+                        "day": 6
+                    }
+                ],
+                "hours_type": "REGULAR",
+                "is_open_now": true
+            }
+        ],
+        "attributes": {
+            "business_temp_closed": null,
+            "menu_url": "http://www.starbucks.com/menu",
+            "waitlist_reservation": null
+        }
+    },
+    {
+        "id": "pTv4RDll3N_CGG3BwtEctg",
+        "alias": "starbucks-new-york-395",
+        "name": "Starbucks",
+        "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/eFVHgt1p5q1VblZQPOJxbA/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/starbucks-new-york-395?adjust_creative=DZswlMOdVwhr_natoNsEVw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DZswlMOdVwhr_natoNsEVw",
+        "review_count": 65,
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee & Tea"
+            }
+        ],
+        "rating": 3.2,
+        "coordinates": {
+            "latitude": 40.71168566,
+            "longitude": -74.00666918
+        },
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "price": "$",
+        "location": {
+            "address1": "38 Park Row",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10038",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "38 Park Row",
+                "New York, NY 10038"
+            ]
+        },
+        "phone": "+12126088073",
+        "display_phone": "(212) 608-8073",
+        "distance": 1252.8991463352156,
+        "business_hours": [
+            {
+                "open": [
+                    {
+                        "is_overnight": false,
+                        "start": "0500",
+                        "end": "2000",
+                        "day": 0
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0500",
+                        "end": "2000",
+                        "day": 1
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0500",
+                        "end": "2000",
+                        "day": 2
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0500",
+                        "end": "2000",
+                        "day": 3
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0500",
+                        "end": "2000",
+                        "day": 4
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "2000",
+                        "day": 5
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "2000",
+                        "day": 6
+                    }
+                ],
+                "hours_type": "REGULAR",
+                "is_open_now": true
+            }
+        ],
+        "attributes": {
+            "business_temp_closed": null,
+            "menu_url": "http://www.starbucks.com/menu",
+            "waitlist_reservation": null
+        }
+    },
+    {
+        "id": "8NHISsd0gKhyPNJoqhEqnA",
+        "alias": "starbucks-new-york-124",
+        "name": "Starbucks",
+        "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/47nxK1t1mCWvPa3mNy5GiQ/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/starbucks-new-york-124?adjust_creative=DZswlMOdVwhr_natoNsEVw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DZswlMOdVwhr_natoNsEVw",
+        "review_count": 136,
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee & Tea"
+            }
+        ],
+        "rating": 2.4,
+        "coordinates": {
+            "latitude": 40.7567061904548,
+            "longitude": -73.98589300000089
+        },
+        "transactions": [
+            "delivery"
+        ],
+        "price": "$",
+        "location": {
+            "address1": "1500 Broadway",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10036",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "1500 Broadway",
+                "New York, NY 10036"
+            ]
+        },
+        "phone": "+12122217515",
+        "display_phone": "(212) 221-7515",
+        "distance": 5743.772224447355,
+        "business_hours": [
+            {
+                "open": [
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "0000",
+                        "day": 0
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "0000",
+                        "day": 1
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "0000",
+                        "day": 2
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "0000",
+                        "day": 3
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "0000",
+                        "day": 4
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "0000",
+                        "day": 5
+                    },
+                    {
+                        "is_overnight": false,
+                        "start": "0530",
+                        "end": "0000",
+                        "day": 6
+                    }
+                ],
+                "hours_type": "REGULAR",
+                "is_open_now": true
+            }
+        ],
+        "attributes": {
+            "business_temp_closed": null,
+            "menu_url": "http://www.starbucks.com/menu/food",
+            "waitlist_reservation": null
+        }
+    }
+]
