@@ -1,7 +1,6 @@
 import os, json, requests
 from dotenv import load_dotenv
 
-
 load_dotenv(dotenv_path="./.env")
 
 API_KEY = os.environ["API_KEY"]
@@ -14,7 +13,7 @@ headers = {"Authorization": f"Bearer {API_KEY}", "accept": "application/json"}
 response = requests.get(
     headers=headers,
     url=BASE_URL + endpoints["businesses"],
-    params={"location": "New York, NY", "term": "starbucks", "limit": "20"},
+    params={"location": "New York, NY", "term": "starbucks", "limit": "10"},
 )
 if response.status_code == 200:
     businesses = response.json()["businesses"]
