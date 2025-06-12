@@ -13,6 +13,7 @@ files = [
     }
     for elem in path_manager.rglob("*.pdf")
 ]
+# path.rglob -> iterator, so we can use either for ... or next(iter_obj)
 
 
 # for file in files:
