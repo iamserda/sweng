@@ -12,7 +12,10 @@ if downloads.exists() and downloads.is_dir():
         }
         for path in Path("/Volumes/SSD1TB/courses/").rglob("**/*.*")
     ]
+# for Path(some_path).glob, use "**/*.*"
+# example Path("/Volumes/SSD1TB/courses/").glob("**/*.*")
 
+# for Path(some_path).rglob("*.mp4"), you can simply pass the file type
 print()
 print(f"Content:\nTotal Count: {len(downloads_content)}")
 for element in downloads_content[-10:]:
