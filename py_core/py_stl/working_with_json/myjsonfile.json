@@ -1,0 +1,644 @@
+[
+    {
+        "number": "No.",
+        "name": "Name",
+        "country": "Country",
+        "nickname": "Nickname"
+    },
+    {
+        "number": "9",
+        "name": "Ronaldo L. Nazario",
+        "country": "Brazil",
+        "nickname": "R9"
+    },
+    {
+        "number": "11",
+        "name": "Romario Farias",
+        "country": "Brazil",
+        "nickname": "R11"
+    },
+    {
+        "number": "10",
+        "name": "Ronaldinho Gaucho",
+        "country": "Brazil",
+        "nickname": "R10"
+    },
+    {
+        "number": "3",
+        "name": "Roberto Carlos",
+        "country": "Brazil",
+        "nickname": "R3"
+    },
+    {
+        "number": "2",
+        "name": "Caf\u00fa",
+        "country": "Brazil",
+        "nickname": "2"
+    },
+    {
+        "number": "1",
+        "name": "Lionel Messi",
+        "country": "Argentina",
+        "nickname": "La Pulga"
+    },
+    {
+        "number": "7",
+        "name": "Cristiano Ronaldo",
+        "country": "Portugal",
+        "nickname": "CR7"
+    },
+    {
+        "number": "8",
+        "name": "Andres Iniesta",
+        "country": "Spain",
+        "nickname": "Don Andres"
+    },
+    {
+        "number": "6",
+        "name": "Xavi Hernandez",
+        "country": "Spain",
+        "nickname": "Xavi"
+    },
+    {
+        "number": "4",
+        "name": "Sergio Ramos",
+        "country": "Spain",
+        "nickname": "SR4"
+    },
+    {
+        "number": "5",
+        "name": "Carles Puyol",
+        "country": "Spain",
+        "nickname": "El Tiburon"
+    },
+    {
+        "number": "21",
+        "name": "Andrea Pirlo",
+        "country": "Italy",
+        "nickname": "Il Maestro"
+    },
+    {
+        "number": "10",
+        "name": "Francesco Totti",
+        "country": "Italy",
+        "nickname": "Il Capitano"
+    },
+    {
+        "number": "11",
+        "name": "Didier Drogba",
+        "country": "Ivory Coast",
+        "nickname": "The Drog"
+    },
+    {
+        "number": "14",
+        "name": "Thierry Henry",
+        "country": "France",
+        "nickname": "King Henry"
+    },
+    {
+        "number": "7",
+        "name": "David Beckham",
+        "country": "England",
+        "nickname": "Becks"
+    },
+    {
+        "number": "8",
+        "name": "Steven Gerrard",
+        "country": "England",
+        "nickname": "Stevie G"
+    },
+    {
+        "number": "6",
+        "name": "Frank Lampard",
+        "country": "England",
+        "nickname": "Supa Frank"
+    },
+    {
+        "number": "9",
+        "name": "Robert Lewandowski",
+        "country": "Poland",
+        "nickname": "Lewy"
+    },
+    {
+        "number": "10",
+        "name": "Luka Modric",
+        "country": "Croatia",
+        "nickname": "Maestro"
+    },
+    {
+        "number": "7",
+        "name": "Franck Ribery",
+        "country": "France",
+        "nickname": "Scarface"
+    },
+    {
+        "number": "10",
+        "name": "Zinedine Zidane",
+        "country": "France",
+        "nickname": "Zizou"
+    },
+    {
+        "number": "7",
+        "name": "Raul Gonzalez",
+        "country": "Spain",
+        "nickname": "Raul"
+    },
+    {
+        "number": "9",
+        "name": "Fernando Torres",
+        "country": "Spain",
+        "nickname": "El Nino"
+    },
+    {
+        "number": "8",
+        "name": "Kaka",
+        "country": "Brazil",
+        "nickname": "Kaka"
+    },
+    {
+        "number": "7",
+        "name": "George Best",
+        "country": "Northern Ireland",
+        "nickname": "Bestie"
+    },
+    {
+        "number": "10",
+        "name": "Wayne Rooney",
+        "country": "England",
+        "nickname": "Wazza"
+    },
+    {
+        "number": "11",
+        "name": "Gareth Bale",
+        "country": "Wales",
+        "nickname": "The Golfer"
+    },
+    {
+        "number": "9",
+        "name": "Alan Shearer",
+        "country": "England",
+        "nickname": "Shearer"
+    },
+    {
+        "number": "10",
+        "name": "Michel Platini",
+        "country": "France",
+        "nickname": "Platoche"
+    },
+    {
+        "number": "7",
+        "name": "Eric Cantona",
+        "country": "France",
+        "nickname": "King Eric"
+    },
+    {
+        "number": "10",
+        "name": "Diego Maradona",
+        "country": "Argentina",
+        "nickname": "El Diego"
+    },
+    {
+        "number": "9",
+        "name": "Gabriel Batistuta",
+        "country": "Argentina",
+        "nickname": "Bati"
+    },
+    {
+        "number": "7",
+        "name": "Arjen Robben",
+        "country": "Netherlands",
+        "nickname": "The Flying Dutchman"
+    },
+    {
+        "number": "10",
+        "name": "Robin van Persie",
+        "country": "Netherlands",
+        "nickname": "RVP"
+    },
+    {
+        "number": "14",
+        "name": "Johan Cruyff",
+        "country": "Netherlands",
+        "nickname": "El Salvador"
+    },
+    {
+        "number": "10",
+        "name": "Michel Laudrup",
+        "country": "Denmark",
+        "nickname": "Laudrup"
+    },
+    {
+        "number": "11",
+        "name": "Samuel Eto'o",
+        "country": "Cameroon",
+        "nickname": "Eto'o Fils"
+    },
+    {
+        "number": "8",
+        "name": "Paul Pogba",
+        "country": "France",
+        "nickname": "Pogboom"
+    },
+    {
+        "number": "9",
+        "name": "Karim Benzema",
+        "country": "France",
+        "nickname": "Benz"
+    },
+    {
+        "number": "10",
+        "name": "Mesut Ozil",
+        "country": "Germany",
+        "nickname": "The Assist King"
+    },
+    {
+        "number": "7",
+        "name": "Bastian Schweinsteiger",
+        "country": "Germany",
+        "nickname": "Schweini"
+    },
+    {
+        "number": "11",
+        "name": "Marco Reus",
+        "country": "Germany",
+        "nickname": "Woody"
+    },
+    {
+        "number": "9",
+        "name": "Miroslav Klose",
+        "country": "Germany",
+        "nickname": "Mr. World Cup"
+    },
+    {
+        "number": "8",
+        "name": "Toni Kroos",
+        "country": "Germany",
+        "nickname": "The Sniper"
+    },
+    {
+        "number": "10",
+        "name": "Kevin De Bruyne",
+        "country": "Belgium",
+        "nickname": "KDB"
+    },
+    {
+        "number": "9",
+        "name": "Romelu Lukaku",
+        "country": "Belgium",
+        "nickname": "Big Rom"
+    },
+    {
+        "number": "7",
+        "name": "Eden Hazard",
+        "country": "Belgium",
+        "nickname": "The Snake"
+    },
+    {
+        "number": "10",
+        "name": "Christian Eriksen",
+        "country": "Denmark",
+        "nickname": "Eriksen"
+    },
+    {
+        "number": "8",
+        "name": "Claudio Marchisio",
+        "country": "Italy",
+        "nickname": "Il Principino"
+    },
+    {
+        "number": "9",
+        "name": "Edinson Cavani",
+        "country": "Uruguay",
+        "nickname": "El Matador"
+    },
+    {
+        "number": "21",
+        "name": "Luis Suarez",
+        "country": "Uruguay",
+        "nickname": "El Pistolero"
+    },
+    {
+        "number": "10",
+        "name": "James Rodriguez",
+        "country": "Colombia",
+        "nickname": "James"
+    },
+    {
+        "number": "9",
+        "name": "Falcao",
+        "country": "Colombia",
+        "nickname": "El Tigre"
+    },
+    {
+        "number": "7",
+        "name": "Alexis Sanchez",
+        "country": "Chile",
+        "nickname": "El Nino Maravilla"
+    },
+    {
+        "number": "8",
+        "name": "Arturo Vidal",
+        "country": "Chile",
+        "nickname": "King Arturo"
+    },
+    {
+        "number": "10",
+        "name": "Heung-min Son",
+        "country": "South Korea",
+        "nickname": "Sonny"
+    },
+    {
+        "number": "7",
+        "name": "Shinji Kagawa",
+        "country": "Japan",
+        "nickname": "Kagawa"
+    },
+    {
+        "number": "9",
+        "name": "Keisuke Honda",
+        "country": "Japan",
+        "nickname": "Keisuke"
+    },
+    {
+        "number": "10",
+        "name": "Ali Daei",
+        "country": "Iran",
+        "nickname": "Mr. Goal"
+    },
+    {
+        "number": "7",
+        "name": "Tim Cahill",
+        "country": "Australia",
+        "nickname": "Cahill"
+    },
+    {
+        "number": "9",
+        "name": "Harry Kewell",
+        "country": "Australia",
+        "nickname": "The Wizard of Oz"
+    },
+    {
+        "number": "10",
+        "name": "Park Ji-sung",
+        "country": "South Korea",
+        "nickname": "Three-Lung Park"
+    },
+    {
+        "number": "8",
+        "name": "Sunil Chhetri",
+        "country": "India",
+        "nickname": "Chhetri"
+    },
+    {
+        "number": "11",
+        "name": "Samuel Chukwueze",
+        "country": "Nigeria",
+        "nickname": "Chukwueze"
+    },
+    {
+        "number": "9",
+        "name": "Victor Osimhen",
+        "country": "Nigeria",
+        "nickname": "Osimhen"
+    },
+    {
+        "number": "10",
+        "name": "Jay-Jay Okocha",
+        "country": "Nigeria",
+        "nickname": "Okocha"
+    },
+    {
+        "number": "7",
+        "name": "Abedi Pele",
+        "country": "Ghana",
+        "nickname": "Pele"
+    },
+    {
+        "number": "8",
+        "name": "Michael Essien",
+        "country": "Ghana",
+        "nickname": "The Bison"
+    },
+    {
+        "number": "9",
+        "name": "Asamoah Gyan",
+        "country": "Ghana",
+        "nickname": "Baby Jet"
+    },
+    {
+        "number": "10",
+        "name": "Didier Zokora",
+        "country": "Ivory Coast",
+        "nickname": "Maestro"
+    },
+    {
+        "number": "7",
+        "name": "Yaya Toure",
+        "country": "Ivory Coast",
+        "nickname": "Yaya"
+    },
+    {
+        "number": "8",
+        "name": "Wilfried Zaha",
+        "country": "Ivory Coast",
+        "nickname": "Zaha"
+    },
+    {
+        "number": "9",
+        "name": "Mo Salah",
+        "country": "Egypt",
+        "nickname": "The Egyptian King"
+    },
+    {
+        "number": "10",
+        "name": "Mahmoud Hassan Trezeguet",
+        "country": "Egypt",
+        "nickname": "Trezeguet"
+    },
+    {
+        "number": "7",
+        "name": "Ahmed Hegazi",
+        "country": "Egypt",
+        "nickname": "Hegazi"
+    },
+    {
+        "number": "8",
+        "name": "Achraf Hakimi",
+        "country": "Morocco",
+        "nickname": "Hakimi"
+    },
+    {
+        "number": "9",
+        "name": "Hakim Ziyech",
+        "country": "Morocco",
+        "nickname": "The Wizard"
+    },
+    {
+        "number": "10",
+        "name": "Medhi Benatia",
+        "country": "Morocco",
+        "nickname": "Benatia"
+    },
+    {
+        "number": "7",
+        "name": "Riyad Mahrez",
+        "country": "Algeria",
+        "nickname": "Algerian Magician"
+    },
+    {
+        "number": "8",
+        "name": "Sofiane Feghouli",
+        "country": "Algeria",
+        "nickname": "Feghouli"
+    },
+    {
+        "number": "9",
+        "name": "Islam Slimani",
+        "country": "Algeria",
+        "nickname": "Slimani"
+    },
+    {
+        "number": "10",
+        "name": "Ali Mabkhout",
+        "country": "UAE",
+        "nickname": "Mabkhout"
+    },
+    {
+        "number": "7",
+        "name": "Omar Abdulrahman",
+        "country": "UAE",
+        "nickname": "Amoory"
+    },
+    {
+        "number": "8",
+        "name": "Sun Jihai",
+        "country": "China",
+        "nickname": "Sun"
+    },
+    {
+        "number": "9",
+        "name": "Shinji Okazaki",
+        "country": "Japan",
+        "nickname": "Okazaki"
+    },
+    {
+        "number": "10",
+        "name": "Ali Al-Habsi",
+        "country": "Oman",
+        "nickname": "Al-Habsi"
+    },
+    {
+        "number": "7",
+        "name": "Ali Adnan",
+        "country": "Iraq",
+        "nickname": "Ali Adnan"
+    },
+    {
+        "number": "8",
+        "name": "Salman Al-Faraj",
+        "country": "Saudi Arabia",
+        "nickname": "Al-Faraj"
+    },
+    {
+        "number": "9",
+        "name": "Salem Al-Dawsari",
+        "country": "Saudi Arabia",
+        "nickname": "Al-Dawsari"
+    },
+    {
+        "number": "10",
+        "name": "Chris Wood",
+        "country": "New Zealand",
+        "nickname": "Woody"
+    },
+    {
+        "number": "7",
+        "name": "Winston Reid",
+        "country": "New Zealand",
+        "nickname": "Reid"
+    },
+    {
+        "number": "8",
+        "name": "Alphonso Davies",
+        "country": "Canada",
+        "nickname": "Phonzy"
+    },
+    {
+        "number": "9",
+        "name": "Jonathan David",
+        "country": "Canada",
+        "nickname": "JD"
+    },
+    {
+        "number": "10",
+        "name": "Clint Dempsey",
+        "country": "USA",
+        "nickname": "Deuce"
+    },
+    {
+        "number": "7",
+        "name": "Christian Pulisic",
+        "country": "USA",
+        "nickname": "Captain America"
+    },
+    {
+        "number": "8",
+        "name": "Michael Bradley",
+        "country": "USA",
+        "nickname": "Bradley"
+    },
+    {
+        "number": "9",
+        "name": "Landon Donovan",
+        "country": "USA",
+        "nickname": "LD"
+    },
+    {
+        "number": "10",
+        "name": "Ruud Gullit",
+        "country": "Netherlands",
+        "nickname": "Gullit"
+    },
+    {
+        "number": "7",
+        "name": "Clarence Seedorf",
+        "country": "Netherlands",
+        "nickname": "Seedorf"
+    },
+    {
+        "number": "8",
+        "name": "Patrick Kluivert",
+        "country": "Netherlands",
+        "nickname": "Kluivert"
+    },
+    {
+        "number": "9",
+        "name": "Edgar Davids",
+        "country": "Netherlands",
+        "nickname": "Pitbull"
+    },
+    {
+        "number": "10",
+        "name": "Roberto Baggio",
+        "country": "Italy",
+        "nickname": "Il Divin Codino"
+    },
+    {
+        "number": "7",
+        "name": "Paolo Maldini",
+        "country": "Italy",
+        "nickname": "Il Capitano"
+    },
+    {
+        "number": "8",
+        "name": "Alessandro Del Piero",
+        "country": "Italy",
+        "nickname": "Pinturicchio"
+    },
+    {
+        "number": "9",
+        "name": "Filippo Inzaghi",
+        "country": "Italy",
+        "nickname": "Super Pippo"
+    }
+]
