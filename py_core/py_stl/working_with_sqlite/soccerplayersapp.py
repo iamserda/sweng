@@ -38,14 +38,12 @@ def get_data_from_db():
         select_directive = "SELECT * FROM SoccerPlayers"
         appCursor = connector.cursor()
         appCursor.execute(select_directive)  # returns an cursor/iterator
-        data = appCursor.fetchmany(20)  # converts data from iterator into a list
+        data = appCursor.fetchall()  # converts data from iterator into a list
         with open("./dboutput.json", "w") as file:
             file.write(json.dumps({"players": data}))
 
 
 # data = get_data()
-
 # if data:
 #     db_insert(data)
-
 get_data_from_db()
