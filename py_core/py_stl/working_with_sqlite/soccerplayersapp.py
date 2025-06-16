@@ -30,7 +30,8 @@ def db_insert(data: list):
 # 4. execute sql statement using cursor.execute options
 # 5. use the data in the cursor to read whatever the db returned back to us.
 # 6. if db connection is still open, close it.
-# 7. Rember databases cursor are exhaustive, they are iterators and once used, you will need to generate a new one.
+# 7. Rember databases cursor are exhaustive, they are iterators
+# and once used, you will need to generate a new one.
 
 
 def get_data_from_db():
