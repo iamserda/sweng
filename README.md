@@ -1,5 +1,24 @@
-# SWENG24 by @iamserda
+# SWENG24
 
+"As of now, this mostly a monorepo of my self-improvement as a developer. Growth is Everything!" -@iamserda
+
+## THE FUTURE:
+- Computer Science Theory
+- Software Engineering Theory including Build Challenges
+- Algorithms Design and Analysis
+- Advanced Data Structures
+- Design Patterns
+- System Design Patterns
+- System Design: LLD, HLD, and more...
+- Databases Theory
+- Database Design and Development
+- Database Management
+- Operating Systems
+- Networking Services
+- Cloud + DevOps
+- Production Engineering
+
+<!-- 
 ## Programming Resources(Some Paid, Some Free)
 
 ### Base CS and Programming:
@@ -50,4 +69,4 @@ and more...
 
 <!-- <p style="width: 75%; margin: 1rem auto 1rem;"><marquee ><span style="font-size: 16px;"></span> </marque></p> -->
 
-Made with 🤍🫶🏿 in N🗽C by [@iamserda](https://www.twitter.com/iamserda) [gh:@iamserda](https://github.com/iamserda) [tw:@iamserda](https://twitter.com/iamserda) [in:@iamserda](https://linkedin.com/in/iamserda)
+Made with 🤍🫶🏿 in N🗽C by [@iamserda](https://www.twitter.com/iamserda) [gh:@iamserda](https://github.com/iamserda) [tw:@iamserda](https://twitter.com/iamserda) [in:@iamserda](https://linkedin.com/in/iamserda) -->
