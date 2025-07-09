@@ -17,3 +17,4 @@ env*
 *scratch.py
 SWENG24.code-workspace
 /python_chapters/*
+projects/use_requests/web.py
