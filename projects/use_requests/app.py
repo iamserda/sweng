@@ -1,5 +1,9 @@
 import requests
 import json
+from pathlib import Path
+from flask import Flask, render_template
+
+APP = Flask(__name__)
 
 
 def get_data():
@@ -35,5 +39,23 @@ def put_data():
         print(f"Error: {err}.")
 
 
-get_data()
-put_data()
+@APP.route("/", methods=["GET"])
+def handle_home():
+    return "<a href='/data'>Get Data</a>"
+
+
+@APP.route("/data", methods=["GET"])
+def handle_data():
+    try:
+        file_path = Path("./data.json")
+        with open(file_path, "r") as file:
+            return render_template("card.html", cards=json.load(file))
+    except Exception as err:
+        print(f"Error: {err}.")  # todo-logging
+        return "<h1>Welcome to Flask App</h1>"
+
+
+if __name__ == "__main__":
+    # put_data()
+    # get_data()
+    APP.run(host="0.0.0.0", port=8882, debug=True)
