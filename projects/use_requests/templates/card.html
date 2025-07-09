@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+
+{% block content %}
+    <div class="row row-cols-4">
+        {% for data in cards %}
+        <div id="{{data.id}}" class="col card gx-3 gy-3 mx-3 my-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">{{ data.id }}. {{ data.title }}</h5>
+                <p class="card-text">{{ data.body }}</p>
+                <a href="#{{ data.id + 10 }}" class="btn btn-primary">Go to Card #{{ data.id + 10 }}</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    
+{% endblock %}
