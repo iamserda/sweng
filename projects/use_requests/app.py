@@ -1,7 +1,7 @@
 import requests
 import json
 from pathlib import Path
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 APP = Flask(__name__)
 
@@ -53,6 +53,18 @@ def handle_data():
     except Exception as err:
         print(f"Error: {err}.")  # todo-logging
         return "<h1>Welcome to Flask App</h1>"
+
+
+@APP.route("/q")
+def handle_query_strings():
+    # request is a flask module, not the 'requests' package from pypi.
+    if request.args:
+        arguments = request.args
+
+    for key, *value in arguments:
+        print(key, value)
+
+    return "content"
 
 
 if __name__ == "__main__":
