@@ -17,4 +17,8 @@ class Employee:
         self.ytd_bonus_pay = 0
         self.current_bonus_pay = 0
 
+    def calculate_gross_pay(self):
+        pass
 
+    def calculate_bonus_pay(self):
+        pass
