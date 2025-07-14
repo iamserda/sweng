@@ -6,16 +6,16 @@ class Employee:
     def __init__(self, first, last):
         self.first_name = first
         self.last_name = last
-        self.ytd_gross_pay = 0
         self.current_gross_pay = 0
-        self.ytd_bonus_pay = 0
         self.current_bonus_pay = 0
+        self.ytd_gross_pay = 0
+        self.ytd_bonus_pay = 0
 
     def reset_year(self):
-        self.ytd_gross_pay = 0
         self.current_gross_pay = 0
-        self.ytd_bonus_pay = 0
         self.current_bonus_pay = 0
+        self.ytd_gross_pay = 0
+        self.ytd_bonus_pay = 0
 
     def calculate_gross_pay(self):
         pass
