@@ -68,15 +68,14 @@ ot-pay: ${self.ot_pay:.2f}\nbonus-pay: ${self.current_bonus_pay:.2f}\nytd-earnin
         Employee.SALARY_EXPENSE += self.current_bonus_pay
 
 
+if __name__ == "__main__":
+    hr_emp1 = HourlyEmployee("James", "Bond")
+    hr_emp1.hours_worked = 50.00
+    hr_emp1.hourly_rate = 93.87
+    for i in range(52):
+        # weekly salary based on 45 hours
+        hr_emp1.calculate_gross_pay()
+        if i == 51:
+            hr_emp1.calculate_bonus_pay(15)
 
-
-hr_emp1 = HourlyEmployee("James", "Bond")
-hr_emp1.hours_worked = 50.00
-hr_emp1.hourly_rate = 93.87
-for i in range(52):
-    # weekly salary based on 45 hours
-    hr_emp1.calculate_gross_pay()
-    if i == 51:
-        hr_emp1.calculate_bonus_pay(15)
-
-print(hr_emp1)
+    print(hr_emp1)
