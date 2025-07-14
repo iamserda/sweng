@@ -4,22 +4,28 @@ from employee import Employee
 class HourlyEmployee(Employee):
     """Class to create new Hourly Employee. It inherits from the base Employee class. HourlyEmployee(first:str, last:str, hours:float(default=40.0), rate:float(default=15))"""
 
-    def __init__(self, first, last, hours=0, rate=Employee.MINIMUM_WAGE):
+    def __init__(
+        self,
+        first: str,
+        last: str,
+        hours: float = 0,
+        rate: float = Employee.MINIMUM_WAGE,
+    ):
         """
         Creates a new Hourly Employee instance.
         HourlyEmployee(first:str(required), last:str(required), hours:float(default=40.0), rate:float(default=15))
         """
         super().__init__(first, last)
-        self.hours_worked = hours
-        self.hourly_rate = rate
-        self.ot_hourly_rate = self.hourly_rate * 1.5
-        self.ot_hours_worked = 0
-        self.regular_pay = 0
-        self.ytd_regular_pay = 0
-        self.ot_pay = 0
-        self.ytd_ot_pay = 0
+        self.hours_worked: float = hours
+        self.hourly_rate: float = rate
+        self.ot_hourly_rate: float = self.hourly_rate * 1.5
+        self.ot_hours_worked: float = 0
+        self.regular_pay: float = 0
+        self.ytd_regular_pay: float = 0
+        self.ot_pay: float = 0
+        self.ytd_ot_pay: float = 0
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"""
 Employee(Hourly): Personal Info:
 first: {self.first_name}
@@ -37,7 +43,7 @@ ytd-bonus-pay: ${self.ytd_bonus_pay:.2f}
 ytd-ot-pay: ${self.ytd_ot_pay:.2f}
 ytd-earnings: ${self.ytd_gross_pay:.2f}"""
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return f"""HourlyEmployee(first:str, last:str, hours:float(default=40.0), rate:float(default=15))"""
 
     def update_hourly_rate(self, new_hourly_rate: float) -> None:
@@ -89,7 +95,7 @@ ytd-earnings: ${self.ytd_gross_pay:.2f}"""
 
         Employee.SALARY_EXPENSE += self.current_gross_pay
 
-    def calculate_bonus_pay(self, bonus_rate):
+    def calculate_bonus_pay(self, bonus_rate) -> None:
         multiplyer = bonus_rate / 100
         self.current_bonus_pay = self.ytd_regular_pay * multiplyer
         self.ytd_bonus_pay += self.current_bonus_pay
