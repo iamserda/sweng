@@ -44,6 +44,10 @@ class Company:
             employee.calculate_bonus_pay(15)
         self.salary_expense = Employee.SALARY_EXPENSE
 
+    def show_salary_expense(self):
+        print(f"Total Salary Expense: ${Employee.SALARY_EXPENSE:.2f}")
+
+
 if __name__ == "__main__":
     co = Company()
     print(co.COMPANY_NAME)
@@ -57,4 +61,4 @@ if __name__ == "__main__":
             co.pay_bonuses()
     for emp in co.salaried_employes + co.hourly_employees:
         print(emp)
-    print(f"{co.salary_expense:.2f}")
+    co.show_salary_expense()
