@@ -8,19 +8,24 @@ class SalaryEmployee(Employee):
         self.gross_pay = 0
 
     def __str__(self):
-        return f"""
-Employee(Salary) Personal Info:
-first: {self.first_name}
-last: {self.last_name}
-\nPay Info:
-regular-pay: ${self.gross_pay:.2f}
-bonus-pay: ${self.current_bonus_pay:.2f}
-\nYear-to-Date Info:
-ytd-earnings: ${self.ytd_gross_pay:.2f}
-ytd-bonus-pay: ${self.ytd_bonus_pay:.2f}"""
+        return (
+            f"\nEmployee Personal Info:"
+            f"\nfirst: {self.first_name}"
+            f"\nlast: {self.last_name}"
+            f"\nPay Info:"
+            f"\nregular-pay: ${self.gross_pay:.2f}"
+            f"\nbonus-pay: ${self.current_bonus_pay:.2f}"
+            f"\nYear-to-Date Info:"
+            f"\nytd-earnings: ${self.ytd_gross_pay:.2f}"
+            f"\nytd-bonus-pay: ${self.ytd_bonus_pay:.2f}\n"
+        )
 
     def __repr__(self):
-        return f"""HourlyEmployee(first:str, last:str, hours:float(default=40.0), rate:float(default=15))"""
+        return (
+            f"SalaryEmployee(first={repr(self.first_name)}, "
+            f"last={repr(self.last_name)}, "
+            f"base_salary={repr(self.base_salary)})"
+        )
 
     def set_salary(self, new_salary):
         if new_salary > 0:
@@ -41,9 +46,9 @@ ytd-bonus-pay: ${self.ytd_bonus_pay:.2f}"""
         self.ytd_gross_pay += self.gross_pay
         Employee.SALARY_EXPENSE += self.gross_pay
 
-
 if __name__ == "__main__":
-    sal_emp1 = SalaryEmployee("Lara", "Croft", 210000)
+    sal_emp1 = SalaryEmployee(first="Lara", last="Croft", base_salary=210000)
+    print(eval(repr(sal_emp1)))
     for i in range(1, 53):
         # weekly salary based on 45 hours
         sal_emp1.calculate_gross_pay()
@@ -51,4 +56,3 @@ if __name__ == "__main__":
             sal_emp1.calculate_bonus_pay(20)
     print(f"Check # {"200"+str(i) if i < 10 else "20"+str(i)}")
     print(sal_emp1)
-    print(f"Total Salary Expense: {Employee.SALARY_EXPENSE:.2f}")
