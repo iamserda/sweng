@@ -1,3 +1,4 @@
+import random
 from employee import Employee
 
 
@@ -16,7 +17,7 @@ class HourlyEmployee(Employee):
         HourlyEmployee(first:str(required), last:str(required), hours:float(default=40.0), rate:float(default=15))
         """
         super().__init__(first, last)
-        self.hours_worked: float = hours
+        self.__hours_worked: float = hours
         self.hourly_rate: float = rate
         self.ot_hourly_rate: float = self.hourly_rate * 1.5
         self.ot_hours_worked: float = 0
@@ -52,40 +53,42 @@ class HourlyEmployee(Employee):
             f"rate={repr(self.hourly_rate)})"
         )
 
+    @property
+    def hours_worked(self):
+        return self.__hours_worked
+
+    @hours_worked.setter
+    def hours_worked(self, hours=0):
+        if hours < 0:
+            print(
+                "WARNING: Hours cannot be less than 0. Hours worked will be set to 0."
+            )
+            return
+        if hours > 80:
+            print("WARNING: Hours worked cannot be more than 80 in a single week.")
+            return
+        self.__hours_worked = hours
+        log_message = f"Updated this week's hours worked to {hours} for employee: {self.first_name}, {self.last_name}"
+        print(log_message)  # fake-log
+
     def update_hourly_rate(self, new_hourly_rate: float) -> None:
         if new_hourly_rate >= Employee.MINIMUM_WAGE:
             self.hourly_rate = new_hourly_rate
         else:
             print(
-                "The 'Hourly Rate' must be equal or more than the minimum wage. "
-                f"\nMinimum wage is currently {Employee.MINIMUM_WAGE}."
+                f"The 'Hourly Rate' must be equal or more than the minimum wage({Employee.MINIMUM_WAGE})."
             )
         return
 
-    def update_hours_worked(self, hours_worked: float) -> None:
-        if hours_worked < 0:
-            print("Work hours cannot be negative.")
-            return
-        if hours_worked > 60:
-            print("Work hours cannot be more than 80. Please reach out to manager.")
-            return
-
-        self.hours_worked = hours_worked
-        logging_message = f"Updated this week's hours worked to {hours_worked} for employee: {self.first_name}, {self.last_name}"
-
     def calculate_gross_pay(self) -> None:
         if self.hours_worked <= 0:
-            print(
-                f"WARNING: Hours worked cannot be less or equal to 0. "
-                f"Update work hours for this employee and try again."
-            )
-            return
+            warning_message = f"WARNING: Hours worked CANNOT be less or equal to 0. Hours worked is {self.hours_worked}."
+            raise ValueError(f"{warning_message}")
         if self.hourly_rate < Employee.MINIMUM_WAGE:
             print(
-                "The 'Hourly Rate' cannot be less than "
-                f"the legal minimum-wage: {Employee.MINIMUM_WAGE}."
+                "WARNING: The 'Hourly Rate' is LESS THAN be less than the legal minimum-wage"
+                f"CURRENTLY, THE LEGAL MINIMUM WAGE IS {Employee.MINIMUM_WAGE}."
             )
-            print("Update hourly rate for thihs employee, and try again.")
             return
 
         self.ot_pay = 0
@@ -113,11 +116,12 @@ class HourlyEmployee(Employee):
 
 if __name__ == "__main__":
     hr_emp1 = HourlyEmployee("James", "Bond")
-    hr_emp1.update_hourly_rate(10.00)
-    hr_emp1.update_hours_worked(50)
-    for i in range(52):
+
+    for i in range(1, 53, 1):
         # weekly salary based on 45 hours
+        hr_emp1.hourly_rate = 46.83
+        hr_emp1.hours_worked = random.randrange(40, 80, 1)
         hr_emp1.calculate_gross_pay()
-        if i == 51:
-            hr_emp1.calculate_bonus_pay(15)
+        if i % 13 == 0:
+            hr_emp1.calculate_bonus_pay(15 / 4)
         print(f"""\nCHECK #{"100"+str(i) if i < 10 else "10"+str(i)}\n{hr_emp1}""")
