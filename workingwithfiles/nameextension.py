@@ -18,8 +18,6 @@ def manual_get_filename_and_fileextension(folder_path):
                     start_index = index
                 else:
                     break
-            
-            print(start_index, end_index)
             print(f"filename: {item[start_index:end_index]}, ext: {item[end_index:]}")
 
 manual_get_filename_and_fileextension("../")
